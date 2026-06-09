@@ -2,8 +2,16 @@
 export { LanguageSwitcher, LocalizedLink } from './LanguageSwitcher';
 export type { LocalizedLinkProps } from './LanguageSwitcher';
 
-export { LocalizedText, LocalizedHeading, LocalizedParagraph } from './LocalizedText';
-export type { LocalizedTextProps, LocalizedHeadingProps, LocalizedParagraphProps } from './LocalizedText';
+export {
+  LocalizedText,
+  LocalizedHeading,
+  LocalizedParagraph,
+} from './LocalizedText';
+export type {
+  LocalizedTextProps,
+  LocalizedHeadingProps,
+  LocalizedParagraphProps,
+} from './LocalizedText';
 
 export {
   usePageTranslations,

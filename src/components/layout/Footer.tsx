@@ -37,8 +37,12 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-bold mb-4">{t('cooperation')}</h3>
             <ul className="space-y-2 text-gray-400">
-              <li className="hover:text-white cursor-pointer">{t('residential')}</li>
-              <li className="hover:text-white cursor-pointer">{t('commercial')}</li>
+              <li className="hover:text-white cursor-pointer">
+                {t('residential')}
+              </li>
+              <li className="hover:text-white cursor-pointer">
+                {t('commercial')}
+              </li>
             </ul>
           </div>
 
@@ -48,9 +52,12 @@ export default function Footer() {
             <ul className="space-y-2 text-gray-400">
               <li>
                 <Link href={routes.downloads} className="hover:text-white">
-                  {t('manual')}\n                </Link>
+                  {t('manual')}\n{' '}
+                </Link>
               </li>
-              <li className="hover:text-white cursor-pointer">{t('afterSales')}</li>
+              <li className="hover:text-white cursor-pointer">
+                {t('afterSales')}
+              </li>
             </ul>
           </div>
 
@@ -58,7 +65,9 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-bold mb-4">{t('legal')}</h3>
             <ul className="space-y-2 text-gray-400">
-              <li className="hover:text-white cursor-pointer">{t('privacy')}</li>
+              <li className="hover:text-white cursor-pointer">
+                {t('privacy')}
+              </li>
               <li className="hover:text-white cursor-pointer">{t('terms')}</li>
             </ul>
           </div>
@@ -69,7 +78,9 @@ export default function Footer() {
 
         {/* 底部文案和版权 */}
         <div className="flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
-          <p>&copy; {currentYear} HiTHIUM. {t('legal')}</p>
+          <p>
+            &copy; {currentYear} HiTHIUM. {t('legal')}
+          </p>
           <div className="flex gap-4 mt-4 md:mt-0">
             <Link href="#" className="hover:text-white">
               {t('privacy')}

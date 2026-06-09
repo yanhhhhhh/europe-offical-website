@@ -38,7 +38,11 @@ export interface LocalizedLinkProps extends React.ComponentProps<typeof Link> {
   href: string;
 }
 
-export function LocalizedLink({ href, children, ...props }: LocalizedLinkProps) {
+export function LocalizedLink({
+  href,
+  children,
+  ...props
+}: LocalizedLinkProps) {
   const locale = useLocale();
 
   // 如果href以斜杠开头，添加locale前缀
