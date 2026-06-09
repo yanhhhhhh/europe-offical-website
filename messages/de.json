@@ -1,0 +1,20 @@
+{
+  "Metadata": {
+    "title": "HiTHIUM Energiespeicher für Zuhause | ARKVOLT Europe",
+    "description": "Zuverlässige Standards für Heimspeicher neu definiert."
+  },
+  "Navigation": {
+    "home": "Home",
+    "solutions": "Lösungen",
+    "products": "Produkte",
+    "service": "Service",
+    "languageLabel": "Sprache"
+  },
+  "Home": {
+    "hero": {
+      "title": "HiTHIUM Energiespeicher für Zuhause",
+      "subtitle": "Zuverlässige Standards für Heimspeicher neu definiert.",
+      "cta": "Energielösungen"
+    }
+  }
+}

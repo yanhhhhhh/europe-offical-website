@@ -1,0 +1,133 @@
+{
+  "common": {
+    "language": "Language",
+    "email": "Email",
+    "submit": "Submit",
+    "download": "Download",
+    "contact": "Contact Us"
+  },
+  "navigation": {
+    "home": "Home",
+    "products": "Products",
+    "about": "About Us",
+    "contact": "Contact Us",
+    "service": "Service",
+    "downloads": "Downloads"
+  },
+  "home": {
+    "hero": {
+      "title": "HiTHIUM Home Energy Storage",
+      "subtitle": "Define the reliability standards for home energy storage.",
+      "cta": "Energy solutions",
+      "imageAlt": "Modern solar home with ARKVOLT storage system"
+    },
+    "solutions": {
+      "title": "Energy solutions",
+      "intro": "The global-leading provider of energy-storage battery and system solutions, offering full-scenario energy-storage products to more than 20 countries and regions worldwide.",
+      "homeTitle": "Home ESS",
+      "homeText": "Self-developed long-life battery cells provide safe and intelligent energy storage solutions, making household electricity use greener and more cost-effective.",
+      "commercialTitle": "C&I Energy Storage",
+      "commercialText": "Reliable battery cell technology supports enterprise energy efficiency, electricity cost reduction, and green transformation."
+    },
+    "products": {
+      "title": "Products",
+      "selector": {
+        "title": "ARKVOLT Series",
+        "intro": "Product technology selection for low-voltage, high-voltage, and all-in-one storage needs.",
+        "batteryEnergy": "Battery Energy",
+        "voltageRange": "Voltage Range",
+        "current": "Current",
+        "netWeight": "Net Weight"
+      }
+    },
+    "advantages": {
+      "title": "Product advantages",
+      "imageAlt": "HiTHIUM battery cell technology",
+      "highConsistency": {
+        "title": "High Consistency",
+        "text": "Large-capacity design and full-tab electrode stacking process."
+      },
+      "maximumSafety": {
+        "title": "Maximum safety",
+        "text": "Multi-dimensional safety design from materials to cell and system."
+      },
+      "maximumLifetime": {
+        "title": "Maximum lifetime",
+        "text": "Long-life manganese iron lithium system and electrolyte repair."
+      },
+      "costEffective": {
+        "title": "Cost-effective",
+        "text": "Smart manufacturing production line lowers ecological impact."
+      }
+    },
+    "cooperation": {
+      "title": "Cooperate for mutual benefit",
+      "text": "HiTHIUM Home Energy Storage is trustworthy. It provides all-round support to its partners, helping build a reliable reputation in the energy storage market.",
+      "cta": "Contact Us",
+      "imageAlt": "Energy storage field service team"
+    },
+    "newsletter": {
+      "title": "Sign up for our newsletter",
+      "intro": "Get the latest updates and insights delivered to your inbox.",
+      "placeholder": "Your email"
+    }
+  },
+  "product": {
+    "f8s": {
+      "title": "ARKVOLT F8S",
+      "model": "HSM-8K16HV-2M",
+      "summary": "High-voltage three-phase solar-storage solution from 8kWh to 256kWh."
+    },
+    "l16s": {
+      "title": "ARKVOLT L16S",
+      "model": "HPB-16LV-S",
+      "summary": "Split-design low-voltage 200A home battery for easy handling and installation."
+    },
+    "l16": {
+      "title": "ARKVOLT L16",
+      "model": "HPB-16LV",
+      "summary": "Large-capacity low-voltage battery with compact footprint and inverter compatibility."
+    },
+    "r30": {
+      "title": "ARKVOLT R30/AIO30",
+      "model": "HPC-30LV-22U",
+      "summary": "Victron-optimized indoor rack-mounted all-in-one cabinet for scalable expansion."
+    }
+  },
+  "about": {
+    "title": "HiTHIUM Home Energy Storage | About Us",
+    "content": "HiTHIUM Home Energy Storage focuses on reliable and safe residential energy storage solutions. With long-life battery cell technology and manufacturing depth, ARKVOLT helps families and partners build greener energy systems.",
+    "imageAlt": "HiTHIUM office building"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "intro": "Please leave your contact information, and our professional sustainable energy solutions team will get in touch with you as soon as possible."
+  },
+  "service": {
+    "downloads": {
+      "title": "Arkvolt Series Products",
+      "intro": "Arkvolt cells powered by HiTHIUM. 2025 global shipment of energy storage batteries TOP 2.",
+      "productName": "Product Name",
+      "batteryCapacity": "Battery capacity",
+      "cellCapacity": "Cell Capacity",
+      "ratedVoltage": "Rated Voltage",
+      "netWeight": "Net Weight",
+      "brochure": "Brochure",
+      "manual": "User Manual"
+    }
+  },
+  "footer": {
+    "company": "Company",
+    "about": "About Us",
+    "contact": "Contact Us",
+    "news": "Latest News",
+    "cooperation": "Cooperation",
+    "residential": "Residential ESS Solutions",
+    "commercial": "C&I ESS Solutions",
+    "afterSales": "After-Sales Service",
+    "manual": "Manual Download",
+    "privacy": "Privacy Policy",
+    "terms": "User Agreement",
+    "legal": "Copyright © Shenzhen Hithium Hero Energy Technology Co., Ltd."
+  }
+}
