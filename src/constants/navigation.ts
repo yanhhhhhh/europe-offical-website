@@ -31,7 +31,7 @@ export const productSlugs = {
   l16: 'arkvolt-l16',
   r30: 'arkvolt-r30',
 } as const;
-const products = [{}];
+
 // 路由配置
 export const routes = {
   home: '/',
@@ -46,6 +46,7 @@ export const routes = {
 export interface NavItem {
   key: string;
   href?: string;
+  type?: 'products'; // 特殊类型：使用 products 数组自动生成下拉
   children?: NavItem[];
 }
 
@@ -56,24 +57,7 @@ export const headerNavigation: NavItem[] = [
   },
   {
     key: 'navigation.products',
-    children: [
-      {
-        key: 'product.f8s.title',
-        href: `/products/${productSlugs.f8s}`,
-      },
-      {
-        key: 'product.l16s.title',
-        href: `/products/${productSlugs.l16s}`,
-      },
-      {
-        key: 'product.l16.title',
-        href: `/products/${productSlugs.l16}`,
-      },
-      {
-        key: 'product.r30.title',
-        href: `/products/${productSlugs.r30}`,
-      },
-    ],
+    type: 'products', // 自动从 products 常量驱动，无需手动维护子项
   },
   {
     key: 'navigation.about',

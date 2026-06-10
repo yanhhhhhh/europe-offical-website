@@ -80,7 +80,7 @@ export const products: Product[] = [
     href: `/products/arkvolt-r30`,
   },
   {
-    slug: 'arkvolt-r30',
+    slug: 'arkvolt-aio30',
     name: 'ARKVOLT AIO30',
     model: 'HPC-30LV-44U',
     capacity: '30kWh / 43.2~58.4V',
