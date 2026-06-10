@@ -9,7 +9,6 @@ import { routes } from '@/constants/navigation';
  */
 export default function Footer() {
   const t = useTranslations('footer');
-  const currentYear = new Date().getFullYear();
 
   return (
     <footer className="bg-gray-900 text-white mt-16">
@@ -18,7 +17,9 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           {/* 公司信息 */}
           <div>
-            <h3 className="text-lg font-bold mb-4">{t('company')}</h3>
+            <h3 className="text-lg font-bold mb-4">
+              Shenzhen Hithium Hero Energy Equity Technology Co., Ltd.
+            </h3>
             <ul className="space-y-2 text-gray-400">
               <li>
                 <Link href={routes.about} className="hover:text-white">
@@ -52,7 +53,7 @@ export default function Footer() {
             <ul className="space-y-2 text-gray-400">
               <li>
                 <Link href={routes.downloads} className="hover:text-white">
-                  {t('manual')}\n{' '}
+                  {t('manual')}
                 </Link>
               </li>
               <li className="hover:text-white cursor-pointer">
@@ -78,9 +79,7 @@ export default function Footer() {
 
         {/* 底部文案和版权 */}
         <div className="flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
-          <p>
-            &copy; {currentYear} HiTHIUM. {t('legal')}
-          </p>
+          <p>&copy; {t('legal')}</p>
           <div className="flex gap-4 mt-4 md:mt-0">
             <Link href="#" className="hover:text-white">
               {t('privacy')}

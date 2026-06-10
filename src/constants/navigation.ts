@@ -1,6 +1,6 @@
 // 支持的语言列表
 export const locales = [
-  { code: 'en', region: 'UK & Ireland', language: 'English' },
+  { code: 'en', region: 'UK', language: 'English' },
   { code: 'de', region: 'Germany', language: 'German' },
   { code: 'nl', region: 'Netherlands', language: 'Dutch' },
   { code: 'sv', region: 'Sweden', language: 'Swedish' },
@@ -31,7 +31,7 @@ export const productSlugs = {
   l16: 'arkvolt-l16',
   r30: 'arkvolt-r30',
 } as const;
-
+const products = [{}];
 // 路由配置
 export const routes = {
   home: '/',
@@ -52,26 +52,26 @@ export interface NavItem {
 export const headerNavigation: NavItem[] = [
   {
     key: 'navigation.home',
-    href: routes.home,
+    href: '/',
   },
   {
     key: 'navigation.products',
     children: [
       {
         key: 'product.f8s.title',
-        href: `${routes.products}/${productSlugs.f8s}`,
+        href: `/products/${productSlugs.f8s}`,
       },
       {
         key: 'product.l16s.title',
-        href: `${routes.products}/${productSlugs.l16s}`,
+        href: `/products/${productSlugs.l16s}`,
       },
       {
         key: 'product.l16.title',
-        href: `${routes.products}/${productSlugs.l16}`,
+        href: `/products/${productSlugs.l16}`,
       },
       {
         key: 'product.r30.title',
-        href: `${routes.products}/${productSlugs.r30}`,
+        href: `/products/${productSlugs.r30}`,
       },
     ],
   },
@@ -80,7 +80,7 @@ export const headerNavigation: NavItem[] = [
     children: [
       {
         key: 'navigation.contact',
-        href: routes.contact,
+        href: '/about-us/contact',
       },
     ],
   },
@@ -89,7 +89,7 @@ export const headerNavigation: NavItem[] = [
     children: [
       {
         key: 'navigation.downloads',
-        href: routes.downloads,
+        href: '/service/downloads',
       },
     ],
   },

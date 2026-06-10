@@ -1,8 +1,3 @@
-// 重新导出产品相关常量（为了向后兼容性）
-export { products, type Product } from './product/products';
-export { homeAssets, advantageKeys } from './home';
-export { downloads } from './service';
-
 export const offices = [
   [
     'UK & Ireland',
