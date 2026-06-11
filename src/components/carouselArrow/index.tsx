@@ -25,8 +25,8 @@ export const CarouselArrow = ({
   ...carouselProps
 }: ArrowProps & AntdArrowProps) => {
   const baseStyle = {
-    width: '0.46rem',
-    height: '0.46rem',
+    width: '46px',
+    height: '46px',
     ...iconStyle,
   };
 

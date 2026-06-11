@@ -8,7 +8,9 @@ const bannerListProps: HeroCardProps[] = homeBannerList.map((item) => {
     ...item,
     backgroundImage: item.image,
     mobileBackgroundImage: item.mobileImage,
-    cardContentClassName: 'lg:!pt-[60px] !pt-[130px]',
+    cardClassName: 'lg:!justify-start ',
+    cardContentClassName:
+      'lg:!pt-[140px]  lg:!px-[346px] lg:!items-start lg:!text-left  !pt-[105px]  ',
     // 仅首张为 LCP 优先
     isPriority: true,
     fetchPriority: 'high',

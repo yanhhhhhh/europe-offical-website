@@ -249,9 +249,11 @@ export const HeroCard = (props: HeroCardProps) => {
                 : undefined
             }
           >
-            <Link href={more} className="no-underline">
-              {/* {t('button.learnMoreInfo')}&gt; */}
-              learnMoreInfo
+            <Link
+              href={more}
+              className="no-underline cursor-pointer !text-white border  block mt-[36px] px-[110px] py-[18px] lg:px-[90px] lg:py-[12px] border-white rounded-[90px]"
+            >
+              {t('common.details')}
             </Link>
           </motion.div>
         )}

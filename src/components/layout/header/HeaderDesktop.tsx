@@ -32,34 +32,34 @@ function ProductsDropdown({
 
   return (
     <div
-      className="fixed left-0 right-0 top-16 w-screen bg-white shadow-lg z-40"
+      className="fixed left-0 right-0 top-[64px] w-screen bg-white shadow-lg z-40"
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}
     >
-      <div className="container mx-auto px-8 py-8">
-        <p className="text-[#292929] font-semibold text-xl mb-6 underline decoration-2 underline-offset-8">
+      <div className="container mx-auto p-[32px]">
+        <p className="text-[#292929] font-semibold text-[20px] mb-[16px] underline decoration-2 underline-offset-8">
           {t('energyStorageSystem')}
         </p>
-        <div className="flex gap-6">
+        <div className="flex gap-2 justify-center">
           {products.map((product) => (
             <Link
               key={product.slug}
               href={product.href}
               onClick={onClose}
-              className="w-64.5 h-95 group"
+              className="w-[258px] h-[380px] group"
             >
-              <div className="bg-[#f5f5f5] relative rounded-md flex flex-col items-center justify-center h-full overflow-hidden mb-3">
+              <div className="bg-[#f5f5f5] relative rounded-[10px] flex flex-col items-center justify-center h-full overflow-hidden mb-[12px]">
                 <Image
                   src={product.image}
                   alt={product.name}
                   className="object-contain absolute top-0 left-0 h-full w-auto group-hover:scale-105 transition-transform duration-200"
                   height={180}
                 />
-                <div className="absolute bottom-0 left-0 w-full py-2">
-                  <p className="text-[#292929] font-semibold text-lg text-center leading-8.5">
+                <div className="absolute bottom-0 left-0 w-full py-[8px]">
+                  <p className="text-[#292929] font-semibold text-[18px] text-center ">
                     {product.name}
                   </p>
-                  <p className="text-[#292929] text-lg font-light text-center leading-8.5">
+                  <p className="text-[#292929] text-[18px] font-light text-center ">
                     {product.capacity}
                   </p>
                 </div>
@@ -95,7 +95,7 @@ function NavDropdown({ item }: NavDropdownProps) {
   // 普通链接
   if (!item.children && !item.type) {
     return (
-      <Link href={item.href || '/'} className="text-[18px] px-2 py-4">
+      <Link href={item.href || '/'} className="text-[18px] px-[16px] py-[16px]">
         {t(item.key)}
       </Link>
     );
@@ -110,10 +110,10 @@ function NavDropdown({ item }: NavDropdownProps) {
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
         >
-          <button className="hover:text-blue-400 flex items-center gap-1 px-2 h-16">
+          <button className="hover:text-blue-400 flex items-center gap-[6px]  text-[18px] h-[64px]">
             {t(item.key)}
             <ChevronDownIcon
-              className={`w-4 h-4 transition-transform duration-200 ${isOpen ? 'rotate-180' : ''}`}
+              className={`size-[16px] transition-transform  duration-200 ${isOpen ? 'rotate-180' : ''}`}
             />
           </button>
         </div>
@@ -135,27 +135,27 @@ function NavDropdown({ item }: NavDropdownProps) {
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       >
-        <button className="hover:text-blue-400 flex items-center gap-1 px-2 h-16">
+        <button className="hover:text-blue-400 flex text-[18px] items-center gap-[6px] px-[12px] h-[64px]">
           {t(item.key)}
           <ChevronDownIcon
-            className={`w-4 h-4 transition-transform duration-200 ${isOpen ? 'rotate-180' : ''}`}
+            className={`size-[16px] transition-transform duration-200 ${isOpen ? 'rotate-180' : ''}`}
           />
         </button>
       </div>
 
       {isOpen && (
         <div
-          className="fixed left-0 right-0 top-16 w-screen bg-white shadow-lg z-40 text-black"
+          className="fixed left-0 right-0 top-[64px] w-screen bg-white shadow-lg z-40 text-black"
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
         >
-          <div className="container mx-auto px-8">
-            <div className="flex justify-center gap-6 py-6">
+          <div className="container mx-auto p-[32px]">
+            <div className="flex justify-center gap-2 ">
               {item.children!.map((child) => (
                 <Link
                   key={child.key}
                   href={child.href || '/'}
-                  className="block py-3 px-4 hover:bg-gray-100 rounded-lg text-base font-medium"
+                  className="block p-[20px] hover:bg-gray-100 rounded-[10px] text-[18px] font-medium"
                   onClick={() => setIsOpen(false)}
                 >
                   {t(child.key)}
@@ -179,7 +179,7 @@ export function HeaderDesktop() {
   return (
     <>
       {/* Desktop Navigation */}
-      <div className="hidden lg:flex items-center gap-8">
+      <div className="hidden lg:flex items-center gap-[20px]">
         {headerNavigation.map((item) => (
           <NavDropdown key={item.key} item={item} />
         ))}

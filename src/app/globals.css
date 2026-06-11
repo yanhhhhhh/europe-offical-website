@@ -3,6 +3,7 @@
 :root {
   --background: #ffffff;
   --foreground: #202326;
+  --color-primary: #1761ff;
   --muted: #6c737f;
   --line: #e6e9ed;
   --panel: #f5f6f7;
@@ -10,31 +11,33 @@
   --accent: #2878ff;
   --accent-2: #2fd178;
   --shadow: 0 22px 70px rgb(15 23 42 / 12%);
+  font-size: calc(100vw / 19.2);
 }
 /*tailwind 开始  */
-@layer components {
-  .hero-layout-section {
-    @apply w-full h-[1210px] relative lg:h-[800px];
-  }
-  .hero-layout-pc {
-    @apply hidden lg:block overflow-hidden w-full h-full;
-  }
-  .hero-layout-mobile {
-    @apply block lg:hidden overflow-hidden w-full h-full;
-  }
+@utility hero-layout-section {
+  @apply w-full h-[1210px] relative lg:h-[800px];
 }
-@layer utilities {
-  .hero-box-shadow {
-    box-shadow:
-      0px 9px 27.8px 0px rgba(0, 7, 23, 0.48),
-      0px 0px 13.7px 2px inset rgba(255, 255, 255, 0.25);
-  }
+
+@utility hero-layout-pc {
+  @apply hidden lg:block overflow-hidden w-full h-full;
+}
+
+@utility hero-layout-mobile {
+  @apply block lg:hidden overflow-hidden w-full h-full;
+}
+
+@utility hero-box-shadow {
+  box-shadow:
+    0 9px 27.8px rgba(0, 7, 23, 0.48),
+    inset 0 0 13.7px 2px rgba(255, 255, 255, 0.25);
 }
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: Arial, Helvetica, ui-sans-serif, system-ui, sans-serif;
   --font-mono: 'SFMono-Regular', Consolas, 'Liberation Mono', monospace;
+  --color-primary: var(--color-primary);
+  /* 字体颜色 */
 }
 
 * {
@@ -47,13 +50,47 @@ html {
 }
 
 body {
+  width: 100vw;
+  height: 100vh;
+  overflow-y: auto;
   margin: 0;
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, ui-sans-serif, system-ui, sans-serif;
   overflow-x: hidden;
+  font-size: 16px;
 }
 
+/* pc */
+@media screen and (max-width: 1440px) {
+  :root {
+    font-size: calc(100vw / 19.2);
+  }
+}
+
+/* ipad横屏 */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1180px) and (orientation: landscape) {
+  :root {
+    font-size: calc(100vw / 19.2);
+  }
+}
+/* 移动端 横屏 */
+
+/* 适配移动端竖屏、pad竖屏 */
+@media screen and (max-width: 1024px) {
+  :root {
+    font-size: calc(100vw / 7.5);
+  }
+}
+
+/* 750 设计稿 */
+@media screen and (max-width: 1024px) {
+  body {
+    overflow-x: hidden;
+    width: 100vw;
+    font-size: 32px;
+  }
+}
 a {
   color: inherit;
   text-decoration: none;
@@ -74,12 +111,4 @@ img {
   padding: 0 8vw;
   background: var(--dark);
   color: #fff;
-}
-
-@media (max-width: 720px) {
-  .header {
-    position: relative;
-    min-height: auto;
-    padding: 17px 18px 0;
-  }
 }

@@ -164,7 +164,7 @@ messages/ # 国际化翻译文件
 - 使用 Tailwind CSS 4.0 + PostCSS 插件
 - 通过 `globals.css` 定义全局样式和主题变量
 - 支持响应式设计：默认移动端优先，PC端用lg（1024作为断点) `:`
-- 移动端750的设计稿，对应的大小需要除以2
+- 移动端750的设计稿 font-size 为28px，tailwindcss 的 className 规则需要使用px text-[28px]
 
 ### CSS 变量（推荐）
 
