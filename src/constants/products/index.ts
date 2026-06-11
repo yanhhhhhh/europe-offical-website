@@ -6,11 +6,6 @@ import l16ProductImage from '@/assets/images/products/l16.webp';
 import l16sProductImage from '@/assets/images/products/l16s.webp';
 import r30ProductImage from '@/assets/images/products/r30.webp';
 import aio30ProductImage from '@/assets/images/products/aio30.webp';
-import f8sDetailImage from '@/assets/images/products/f8s/02-01.webp';
-import l16sDetailImage from '@/assets/images/products/l16s/03-01.webp';
-import l16DetailImage from '@/assets/images/products/l16/pc/04-01.webp';
-import r30DetailImage from '@/assets/images/products/r30/pc/05-01.webp';
-import aio30DetailImage from '@/assets/images/products/r30/pc/05-01.webp';
 
 export type Product = {
   slug: string;
@@ -21,7 +16,7 @@ export type Product = {
   current: string;
   weight: string;
   image: StaticImageData;
-  detailImage: StaticImageData;
+
   summaryKey: string;
   href: string;
 };
@@ -36,7 +31,7 @@ export const products: Product[] = [
     current: '12.5A / 12.5A',
     weight: '176kg',
     image: f8sProductImage,
-    detailImage: f8sDetailImage,
+
     summaryKey: 'f8s',
     href: `/products/arkvolt-f8s`,
   },
@@ -49,7 +44,7 @@ export const products: Product[] = [
     current: '157A / 157A',
     weight: '137.5kg',
     image: l16sProductImage,
-    detailImage: l16sDetailImage,
+
     summaryKey: 'l16s',
     href: `/products/arkvolt-l16s`,
   },
@@ -62,7 +57,7 @@ export const products: Product[] = [
     current: '157A / 157A',
     weight: '123kg',
     image: l16ProductImage,
-    detailImage: l16DetailImage,
+
     summaryKey: 'l16',
     href: `/products/arkvolt-l16`,
   },
@@ -75,7 +70,6 @@ export const products: Product[] = [
     current: '300A max',
     weight: '350kg',
     image: r30ProductImage,
-    detailImage: r30DetailImage,
     summaryKey: 'r30',
     href: `/products/arkvolt-r30`,
   },
@@ -88,7 +82,7 @@ export const products: Product[] = [
     current: '300A max',
     weight: '350kg',
     image: aio30ProductImage,
-    detailImage: aio30DetailImage,
+
     summaryKey: 'r30',
     href: `/products/arkvolt-r30`,
   },
