@@ -1,7 +1,6 @@
 import { NextIntlClientProvider } from 'next-intl';
 import { setRequestLocale } from 'next-intl/server';
-import { notFound } from 'next/navigation';
-import { isLocale } from '@/constants/navigation';
+
 import { routing } from '@/i18n/routing';
 import { Header, Footer } from '@/components';
 
@@ -19,10 +18,6 @@ export default async function LocaleLayout({
   params,
 }: LocaleLayoutProps) {
   const { locale } = await params;
-
-  if (!isLocale(locale)) {
-    notFound();
-  }
 
   setRequestLocale(locale);
 

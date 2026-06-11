@@ -6,11 +6,11 @@ import l16ProductImage from '@/assets/images/products/l16.webp';
 import l16sProductImage from '@/assets/images/products/l16s.webp';
 import r30ProductImage from '@/assets/images/products/r30.webp';
 import aio30ProductImage from '@/assets/images/products/aio30.webp';
-import f8sDetailImage from '@/assets/images/f8s/pc/02-01.webp';
-import l16sDetailImage from '@/assets/images/l16s/pc/03-01.webp';
-import l16DetailImage from '@/assets/images/l16/pc/04-01.webp';
-import r30DetailImage from '@/assets/images/r30/pc/05-01.webp';
-import aio30DetailImage from '@/assets/images/r30/pc/05-01.webp';
+import f8sDetailImage from '@/assets/images/products/f8s/02-01.webp';
+import l16sDetailImage from '@/assets/images/products/l16s/03-01.webp';
+import l16DetailImage from '@/assets/images/products/l16/pc/04-01.webp';
+import r30DetailImage from '@/assets/images/products/r30/pc/05-01.webp';
+import aio30DetailImage from '@/assets/images/products/r30/pc/05-01.webp';
 
 export type Product = {
   slug: string;

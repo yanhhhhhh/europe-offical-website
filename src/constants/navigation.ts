@@ -2,13 +2,14 @@
 export const locales = [
   { code: 'en', region: 'UK', language: 'English' },
   { code: 'de', region: 'Germany', language: 'German' },
-  { code: 'nl', region: 'Netherlands', language: 'Dutch' },
-  { code: 'sv', region: 'Sweden', language: 'Swedish' },
-  { code: 'pl', region: 'Poland', language: 'Polish' },
-  { code: 'es', region: 'Spain', language: 'Spanish' },
-  { code: 'fr', region: 'France', language: 'French' },
-  { code: 'hu', region: 'Hungary', language: 'Hungarian' },
-  { code: 'it', region: 'Italy', language: 'Italian' },
+  // 后续再支持更多语言
+  // { code: 'nl', region: 'Netherlands', language: 'Dutch' },
+  // { code: 'sv', region: 'Sweden', language: 'Swedish' },
+  // { code: 'pl', region: 'Poland', language: 'Polish' },
+  // { code: 'es', region: 'Spain', language: 'Spanish' },
+  // { code: 'fr', region: 'France', language: 'French' },
+  // { code: 'hu', region: 'Hungary', language: 'Hungarian' },
+  // { code: 'it', region: 'Italy', language: 'Italian' },
 ] as const;
 
 export type Locale = (typeof locales)[number]['code'];

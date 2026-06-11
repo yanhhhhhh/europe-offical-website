@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import logo from '@/assets/images/logo.webp';
 import { HeaderDesktop } from './HeaderDesktop';
@@ -11,6 +11,18 @@ import { HeaderMobile } from './HeaderMobile';
  */
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  // 菜单打开时禁止页面滚动
+  useEffect(() => {
+    if (isMobileMenuOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'auto';
+    }
+    return () => {
+      document.body.style.overflow = 'auto';
+    };
+  }, [isMobileMenuOpen]);
 
   return (
     <header className="bg-black shadow sticky top-0 z-50 text-white">

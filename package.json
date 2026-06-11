@@ -5,14 +5,18 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "build:prod": "next build",
     "start": "next start",
     "lint": "eslint"
   },
   "dependencies": {
+    "ahooks": "^3.9.7",
+    "motion": "^12.40.0",
     "next": "16.2.7",
     "next-intl": "^4.13.0",
     "react": "19.2.4",
-    "react-dom": "19.2.4"
+    "react-dom": "19.2.4",
+    "swiper": "^12.2.0"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",

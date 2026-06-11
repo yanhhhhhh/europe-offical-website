@@ -1,0 +1,50 @@
+.swiper {
+  width: 100%;
+
+  position: relative;
+}
+
+
+
+
+
+
+.swiper :global(.swiper-pagination-bullet) {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+}
+
+.swiper :global(.swiper-pagination-bullet::before) {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.swiper :global(.swiper-pagination-bullet-active) {
+  width: 40px;
+  border-radius: 10px;
+
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.swiper :global(.swiper-pagination-bullet-active::before) {
+  background-color: var(--color-primary);
+  animation: slide-progress 2s cubic-bezier(0.3, 0, 0.3, 1) forwards;
+}
+
+@keyframes slide-progress {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}

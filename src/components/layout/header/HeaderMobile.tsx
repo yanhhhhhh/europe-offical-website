@@ -4,8 +4,9 @@ import { useTranslations } from 'next-intl';
 import { headerNavigation } from '@/constants/navigation';
 import { products } from '@/constants/products';
 import Link from 'next/link';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Image from 'next/image';
+import { createPortal } from 'react-dom';
 import logo from '@/assets/images/logo.webp';
 
 /**
@@ -20,6 +21,11 @@ export function HeaderMobile({
 }) {
   const t = useTranslations();
   const [expandedItems, setExpandedItems] = useState<string[]>([]);
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   const toggleItem = (key: string) => {
     setExpandedItems((prev) =>
@@ -27,10 +33,10 @@ export function HeaderMobile({
     );
   };
 
-  if (!isOpen) return null;
+  if (!isOpen || !mounted) return null;
 
-  return (
-    <div className="fixed inset-0 w-full bg-[#080a0e] z-50 lg:hidden overflow-y-auto overflow-x-hidden">
+  return createPortal(
+    <div className="fixed inset-0 w-full bg-[#080a0e] z-100 lg:hidden overflow-y-auto overflow-x-hidden">
       {/* Header - 保持与主 header 一致的高度 h-16 (64px) */}
       <div className="flex justify-between items-center px-4 h-16 bg-black w-full">
         <Image
@@ -80,12 +86,12 @@ export function HeaderMobile({
                     className="flex-1"
                     onClick={onClose}
                   >
-                    <span className="text-white text-base font-bold">
+                    <span className="text-white text-xl font-bold">
                       {t(item.key)}
                     </span>
                   </Link>
                 ) : (
-                  <span className="text-white text-base font-bold">
+                  <span className="text-white text-xl font-bold">
                     {t(item.key)}
                   </span>
                 )}
@@ -102,7 +108,7 @@ export function HeaderMobile({
                   {item.type === 'products' ? (
                     // Products Grid - 20px → 10px
                     <div className="bg-[#080a0e] py-4 px-4 w-full">
-                      <p className="text-white text-[10px] font-semibold mb-3 underline decoration-1 underline-offset-4">
+                      <p className="text-white text-xl font-semibold mb-3 underline decoration-1 underline-offset-4">
                         {t('navigation.energyStorageSystem')}
                       </p>
                       <div className="grid grid-cols-2 gap-2 w-full">
@@ -156,7 +162,8 @@ export function HeaderMobile({
           );
         })}
       </div>
-    </div>
+    </div>,
+    document.body,
   );
 }
 

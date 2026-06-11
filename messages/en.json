@@ -6,10 +6,7 @@
     "download": "Download",
     "contact": "Contact Us"
   },
-  "Metadata": {
-    "title": "HiTHIUM Home Energy Storage | Reliable Residential Energy Solutions",
-    "description": "HiTHIUM Home Energy Storage offers reliable and safe residential energy storage solutions with long-life battery cell technology. Explore our ARKVOLT series for greener and more cost-effective energy use at home."
-  },
+
   "navigation": {
     "home": "Home",
     "products": "Products",
@@ -20,12 +17,6 @@
     "energyStorageSystem": "Energy storage system"
   },
   "home": {
-    "hero": {
-      "title": "HiTHIUM Home Energy Storage",
-      "subtitle": "Define the reliability standards for home energy storage.",
-      "cta": "Energy solutions",
-      "imageAlt": "Modern solar home with ARKVOLT storage system"
-    },
     "solutions": {
       "title": "Energy solutions",
       "intro": "The global-leading provider of energy-storage battery and system solutions, offering full-scenario energy-storage products to more than 20 countries and regions worldwide.",
@@ -77,24 +68,28 @@
       "placeholder": "Your email"
     }
   },
-  "product": {
+  "products": {
     "f8s": {
-      "title": "ARKVOLT F8S",
+      "bannerTitle": "ARKVOLT F8S",
+      "bannerDescription": "Home ESS / High - voltage 16kWh battery / 576V",
       "model": "HSM-8K16HV-2M",
       "summary": "High-voltage three-phase solar-storage solution from 8kWh to 256kWh."
     },
     "l16s": {
-      "title": "ARKVOLT L16S",
+      "bannerTitle": "ARKVOLT L16S",
+      "bannerDescription": "Home ESS / Low-voltage 16kWh battery / 51.2V",
       "model": "HPB-16LV-S",
       "summary": "Split-design low-voltage 200A home battery for easy handling and installation."
     },
     "l16": {
-      "title": "ARKVOLT L16",
+      "bannerTitle": "ARKVOLT L16",
+      "bannerDescription": "Home ESS / Low-voltage 16kWh battery / 51.2V",
       "model": "HPB-16LV",
       "summary": "Large-capacity low-voltage battery with compact footprint and inverter compatibility."
     },
     "r30": {
-      "title": "ARKVOLT R30/AIO30",
+      "bannerTitle": "ARKVOLT R30/AIO30",
+      "bannerDescription": "ARKVOLT AIO 30 is a Victron‑optimized indoor rack‑mounted all‑in‑one storage cabinet, engineered for plug‑and‑play, rapid deployment and scalable expansion.",
       "model": "HPC-30LV-22U",
       "summary": "Victron-optimized indoor rack-mounted all-in-one cabinet for scalable expansion."
     }
