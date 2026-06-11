@@ -37,7 +37,7 @@ function ProductsDropdown({
       onMouseLeave={onMouseLeave}
     >
       <div className="container mx-auto px-8 py-8">
-        <p className="text-[#292929] font-semibold text-[20px] mb-6 underline decoration-2 underline-offset-8">
+        <p className="text-[#292929] font-semibold text-xl mb-6 underline decoration-2 underline-offset-8">
           {t('energyStorageSystem')}
         </p>
         <div className="flex gap-6">
@@ -56,10 +56,10 @@ function ProductsDropdown({
                   height={180}
                 />
                 <div className="absolute bottom-0 left-0 w-full py-2">
-                  <p className="text-[#292929] font-semibold text-[18px] text-center leading-8.5">
+                  <p className="text-[#292929] font-semibold text-lg text-center leading-8.5">
                     {product.name}
                   </p>
-                  <p className="text-[#292929] text-[18px] font-light text-center leading-8.5">
+                  <p className="text-[#292929] text-lg font-light text-center leading-8.5">
                     {product.capacity}
                   </p>
                 </div>
@@ -179,14 +179,14 @@ export function HeaderDesktop() {
   return (
     <>
       {/* Desktop Navigation */}
-      <div className="hidden md:flex items-center gap-8">
+      <div className="hidden lg:flex items-center gap-8">
         {headerNavigation.map((item) => (
           <NavDropdown key={item.key} item={item} />
         ))}
       </div>
 
       {/* 语言切换 - 桌面端 */}
-      <div className="relative hidden md:block">
+      <div className="relative hidden lg:block">
         <button
           onClick={() => setIsLangOpen(!isLangOpen)}
           className="text-white hover:text-gray-300 px-3 py-1"

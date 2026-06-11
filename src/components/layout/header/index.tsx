@@ -18,7 +18,7 @@ export default function Header() {
         {/* Logo */}
         <Image
           src={logo}
-          className="h-6 md:h-8 w-auto"
+          className="h-6 lg:h-8 w-auto"
           alt="HiTHIUM Logo"
           height={32}
           priority
@@ -29,7 +29,7 @@ export default function Header() {
 
         {/* Mobile Menu Button */}
         <button
-          className="md:hidden text-white p-2"
+          className="lg:hidden text-white p-2"
           onClick={() => setIsMobileMenuOpen(true)}
           aria-label="Open menu"
         >

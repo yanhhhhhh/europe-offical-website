@@ -30,7 +30,7 @@ export function HeaderMobile({
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 w-full bg-[#080a0e] z-50 md:hidden overflow-y-auto overflow-x-hidden">
+    <div className="fixed inset-0 w-full bg-[#080a0e] z-50 lg:hidden overflow-y-auto overflow-x-hidden">
       {/* Header - 保持与主 header 一致的高度 h-16 (64px) */}
       <div className="flex justify-between items-center px-4 h-16 bg-black w-full">
         <Image
@@ -80,12 +80,12 @@ export function HeaderMobile({
                     className="flex-1"
                     onClick={onClose}
                   >
-                    <span className="text-white text-[16px] font-bold">
+                    <span className="text-white text-base font-bold">
                       {t(item.key)}
                     </span>
                   </Link>
                 ) : (
-                  <span className="text-white text-[16px] font-bold">
+                  <span className="text-white text-base font-bold">
                     {t(item.key)}
                   </span>
                 )}
@@ -121,10 +121,10 @@ export function HeaderMobile({
                                 className="object-contain h-37.5 w-auto mb-2"
                                 height={150}
                               />
-                              <p className="text-white text-[12px] font-semibold text-center leading-4.25">
+                              <p className="text-white text-sm font-semibold text-center leading-4.25">
                                 {product.name}
                               </p>
-                              <p className="text-white text-[11px] text-center leading-4.25">
+                              <p className="text-white text-xs text-center leading-4.25">
                                 {product.capacity}
                               </p>
                             </div>
@@ -133,7 +133,6 @@ export function HeaderMobile({
                       </div>
                     </div>
                   ) : (
-                    // Regular Children - 100px → 50px, 28px → 14px
                     <div className="w-full">
                       {item.children?.map((child) => (
                         <Link
@@ -143,7 +142,7 @@ export function HeaderMobile({
                           className="block w-full"
                         >
                           <div className="bg-[#23262d] opacity-50 h-12.5 flex items-center px-8 w-full">
-                            <span className="text-white text-[16px] font-light">
+                            <span className="text-white text-base font-light">
                               {t(child.key)}
                             </span>
                           </div>
