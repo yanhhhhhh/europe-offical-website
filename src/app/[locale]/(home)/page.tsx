@@ -1,4 +1,5 @@
-import { locales, type Locale } from '@/constants/navigation';
+import { locales } from '@/constants/navigation';
+import { HomeBanner } from './banner';
 
 type PageProps = {
   params: Promise<{ locale: string }>;
@@ -9,9 +10,11 @@ export function generateStaticParams() {
 }
 
 export default async function LocaleHome({ params }: PageProps) {
-  const { locale: localeParam } = await params;
+  await params;
 
-  const locale = localeParam as Locale;
-
-  return <main className="site-shell">home page - {locale}</main>;
+  return (
+    <>
+      <HomeBanner />
+    </>
+  );
 }

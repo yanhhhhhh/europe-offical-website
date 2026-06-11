@@ -11,7 +11,25 @@
   --accent-2: #2fd178;
   --shadow: 0 22px 70px rgb(15 23 42 / 12%);
 }
-
+/*tailwind 开始  */
+@layer components {
+  .hero-layout-section {
+    @apply w-full h-[1210px] relative lg:h-[800px];
+  }
+  .hero-layout-pc {
+    @apply hidden lg:block overflow-hidden w-full h-full;
+  }
+  .hero-layout-mobile {
+    @apply block lg:hidden overflow-hidden w-full h-full;
+  }
+}
+@layer utilities {
+  .hero-box-shadow {
+    box-shadow:
+      0px 9px 27.8px 0px rgba(0, 7, 23, 0.48),
+      0px 0px 13.7px 2px inset rgba(255, 255, 255, 0.25);
+  }
+}
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);

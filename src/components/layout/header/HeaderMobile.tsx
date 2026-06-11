@@ -4,7 +4,7 @@ import { useTranslations } from 'next-intl';
 import { headerNavigation } from '@/constants/navigation';
 import { products } from '@/constants/products';
 import Link from 'next/link';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import Image from 'next/image';
 import { createPortal } from 'react-dom';
 import logo from '@/assets/images/logo.webp';
@@ -21,11 +21,6 @@ export function HeaderMobile({
 }) {
   const t = useTranslations();
   const [expandedItems, setExpandedItems] = useState<string[]>([]);
-  const [mounted, setMounted] = useState(false);
-
-  useEffect(() => {
-    setMounted(true);
-  }, []);
 
   const toggleItem = (key: string) => {
     setExpandedItems((prev) =>
@@ -33,7 +28,7 @@ export function HeaderMobile({
     );
   };
 
-  if (!isOpen || !mounted) return null;
+  if (!isOpen || typeof document === 'undefined') return null;
 
   return createPortal(
     <div className="fixed inset-0 w-full bg-[#080a0e] z-100 lg:hidden overflow-y-auto overflow-x-hidden">

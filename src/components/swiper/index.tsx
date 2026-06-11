@@ -30,9 +30,9 @@ export function MySwiper({ list, pagination = true }: MySwiperProps) {
     <Swiper
       spaceBetween={40}
       centeredSlides={true}
-      autoplay={{
-        delay: 2500,
-      }}
+      // autoplay={{
+      //   delay: 2500,
+      // }}
       pagination={
         pagination
           ? {

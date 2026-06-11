@@ -4,7 +4,7 @@ import { MotionVariantName, motionVariants } from '@/constants/motionVariants';
 
 // import { baseConfigAtom } from '@/stores';
 // import { useAtomValue } from 'jotai';
-import { PropsWithChildren, useEffect, useRef, useState } from 'react';
+import { PropsWithChildren, useRef } from 'react';
 
 import { useMotionTextAnimation } from '@/hooks/useMotionTextAnimation';
 // import { getLanguageCode } from '@/utils/languageCode';
@@ -56,9 +56,6 @@ export const HeroCard = (props: HeroCardProps) => {
   // const { locale } = useAtomValue(baseConfigAtom);
 
   const languageCode = 'en'; // getLanguageCode(locale);
-  const [mounted, setMounted] = useState(false);
-
-  useEffect(() => setMounted(true), []);
 
   const {
     title,
@@ -107,24 +104,20 @@ export const HeroCard = (props: HeroCardProps) => {
   );
   const cardClass = `hero-card  relative flex justify-center w-screen h-[1210px] lg:h-[800px]  ${cardClassName}`;
   const cardContentClass = `hero-card-content relative lg:pt-[46px] pt-[40px] flex flex-col items-center  text-center
-    ${mounted ? (languageCode == 'en' ? 'leading-[1.2]' : '') : 'leading-[1.2]'}
+    ${languageCode == 'en' ? 'leading-[1.2]' : ''}
   ${cardContentClassName}`;
 
   const titleClass = `hero-card-title lg:text-[46px]    font-bold  ${titleClassName}
   ${
-    mounted
-      ? languageCode == 'en'
-        ? 'text-[48px] leading-[1.2]'
-        : 'text-[58px] leading-[1.5]'
-      : 'text-[48px] leading-[1.2]' // SSR/CSR 初始一致
+    languageCode == 'en'
+      ? 'text-[48px] leading-[1.2]'
+      : 'text-[58px] leading-[1.5]'
   }
   `;
   const descriptionClass = `hero-card-description lg:text-[24px]  font-normal text-center mt-[10px]  ${
-    mounted
-      ? languageCode == 'en'
-        ? 'text-[32px] leading-[1.2]'
-        : 'text-[40px] leading-[1.5]'
-      : 'text-[32px] leading-[1.2]' // SSR/CSR 初始一致
+    languageCode == 'en'
+      ? 'text-[32px] leading-[1.2]'
+      : 'text-[40px] leading-[1.5]'
   } ${descriptionClassName}`;
   const moreClass = `hero-card-more lg:text-[22px] text-[32px] font-normal  text-primary cursor-pointer no-underline mt-[10px] ${moreClassName}`;
   const imageClass = `hero-layout-pc absolute w-full inset-0  ${imageClassName}`;
@@ -257,7 +250,8 @@ export const HeroCard = (props: HeroCardProps) => {
             }
           >
             <Link href={more} className="no-underline">
-              {t('button.learnMoreInfo')}&gt;
+              {/* {t('button.learnMoreInfo')}&gt; */}
+              learnMoreInfo
             </Link>
           </motion.div>
         )}
@@ -268,7 +262,8 @@ export const HeroCard = (props: HeroCardProps) => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            {t('button.contactUs')}&gt;
+            {/* {t('button.contactUs')}&gt; */}
+            contactUs
           </a>
         )}
         {moreType === 'learnMore' && more && (

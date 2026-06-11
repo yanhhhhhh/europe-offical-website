@@ -25,7 +25,7 @@ export default async function LocaleLayout({
     <NextIntlClientProvider>
       <div className="flex flex-col min-h-screen">
         <Header />
-        <main className="flex-grow">{children}</main>
+        <main className="grow">{children}</main>
         <Footer />
       </div>
     </NextIntlClientProvider>

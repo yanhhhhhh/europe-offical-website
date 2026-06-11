@@ -1,9 +1,9 @@
-import { bannerList } from '@/constants/home';
+import { homeBannerList } from '@/constants/home';
 
 import { HeroCardProps } from '@/components/HeroCard';
 import MySwiper from '@/components/swiper';
 
-const bannerListProps: HeroCardProps[] = bannerList.map((item, index) => {
+const bannerListProps: HeroCardProps[] = homeBannerList.map((item) => {
   return {
     ...item,
     backgroundImage: item.image,
