@@ -2,7 +2,6 @@ import { PropsWithChildren } from 'react';
 
 import styles from './index.module.css';
 import { getLocale, getTranslations } from 'next-intl/server';
-import { getLanguageCode } from '@/utils/languageCode';
 
 export type MoreType = 'learnMoreInfo' | 'learnMore' | 'contactUs';
 
@@ -34,7 +33,6 @@ export interface HeroServerCardProps extends PropsWithChildren {
 export const HeroServerCard = async (pros: HeroServerCardProps) => {
   const locale = await getLocale();
   const t = await getTranslations({ locale });
-  const languageCode = getLanguageCode(locale);
 
   const {
     title,
@@ -62,9 +60,7 @@ export const HeroServerCard = async (pros: HeroServerCardProps) => {
 
   return (
     <div
-      className={`${styles.heroCard} ${
-        languageCode ? styles[languageCode] : ''
-      } ${cardClassName} relative w-screen lg:h-[800px] h-[1210px] `}
+      className={`${styles.heroCard}  ${cardClassName} relative w-screen lg:h-[800px] h-[1210px] `}
       style={{
         ...cardStyle,
       }}

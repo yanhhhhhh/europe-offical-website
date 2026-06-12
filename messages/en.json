@@ -102,19 +102,27 @@
   },
   "contact": {
     "title": "Contact Us",
-    "intro": "Please leave your contact information, and our professional sustainable energy solutions team will get in touch with you as soon as possible."
+    "description": "Please leave your contact information, and our professional sustainable energy solutions team will get in touch with you as soon as possible."
   },
   "service": {
     "downloads": {
       "title": "Arkvolt Series Products",
-      "intro": "Arkvolt cells powered by HiTHIUM. 2025 global shipment of energy storage batteries TOP 2.",
+      "description": "Arkvolt cells powered by HiTHIUM. 2025 global shipment of energy storage batteries TOP 2.",
       "productName": "Product Name",
+      "diagram": "Diagram",
       "batteryCapacity": "Battery capacity",
       "cellCapacity": "Cell Capacity",
       "ratedVoltage": "Rated Voltage",
       "netWeight": "Net Weight",
       "brochure": "Brochure",
-      "manual": "User Manual"
+      "manual": "User Manual",
+      "productFeatures": "Product Features",
+      "operationVoltageRange": "Operation Voltage Range",
+      "maximumChargeDischargeCurrent": "Maximum Charge/Discharge Current",
+      "cycleLife": "Cycle Life",
+      "rating": " Rating",
+      "certifications": "Certifications",
+      "dimensions": "Dimensions"
     }
   },
   "footer": {
