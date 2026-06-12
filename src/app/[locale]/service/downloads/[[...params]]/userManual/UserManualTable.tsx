@@ -1,15 +1,13 @@
 import { useTranslations } from 'next-intl';
-import { IProductInfo } from '@/api/download';
+import { IProduct } from '@/constants/products';
 import IconDownload from '@/components/icons/icon-svg/download.svg?component';
 import IconQrCode from '@/components/icons/icon-svg/icon_qr_code.svg?component';
 import IconZhankai from '@/components/icons/icon-svg/zhankai.svg?component';
 
-import { useWebsiteDownloadTrack } from '@/hooks/useTrackGather';
-
 import { QRCode } from 'antd';
 
 interface UserManualTableProps {
-  contentList: IProductInfo[];
+  contentList: IProduct[];
   expandedProduct: string;
   onToggleExpansion: (productKey: string) => void;
   productRefs: React.MutableRefObject<{
@@ -30,43 +28,40 @@ const UserManualTable: React.FC<UserManualTableProps> = ({
   productRefs,
 }) => {
   const t = useTranslations();
+  const productFeaturesT = useTranslations('service.downloads');
 
-  const { downloadTrack } = useWebsiteDownloadTrack();
-
-  const downloadAction = (
-    product: IProductInfo,
-    type: 'brochure' | 'manual'
-  ) => {
+  const downloadAction = (product: IProduct, type: 'brochure' | 'manual') => {
     const url = type === 'brochure' ? product.albumUrl : product.manualUrl;
     if (!url) return;
 
     window.open(url);
 
     // Track download
-    downloadTrack(product);
   };
 
-  const renderProductFeatures = (product: IProductInfo) => {
-    if (!product.productFeatureObject) return null;
+  const renderProductFeatures = (product: IProduct) => {
+    if (!product.productFeatures) return null;
 
-    const features = product.productFeatureObject;
+    const features = product.productFeatures;
 
     return (
-      <div className="p-[16px] lg:p-[28px] lg:pl-0 mt-[8px]">
+      <div className="p-[16px] lg:p-[10px] pr-0 mt-[8px]">
         <h3 className="text-[36px] lg:text-[18px] font-semibold  mb-[16px] ">
-          {t('HeroEECommon.productFeature')}
+          {t('service.downloads.productFeatures')}
         </h3>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-[8px] lg:gap-[12px]">
-          {Object.entries(features).map(([key, value]) => (
-            <div key={key} className="flex items-center ">
-              <span className="font-medium text-gray-700 mr-[8px] text-[32px] lg:text-[18px]">
-                {key}:
-              </span>
-              <span className="text-gray-600 text-[32px] lg:text-[18px]">
-                {value || '/'}
-              </span>
-            </div>
-          ))}
+          {features.map(({ key, value }) => {
+            return (
+              <div key={key} className="flex items-center ">
+                <span className="font-medium text-gray-700 mr-[8px] text-[32px] lg:text-[18px]">
+                  {productFeaturesT(key)}:
+                </span>
+                <span className="text-gray-600 text-[32px] lg:text-[18px]">
+                  {value || '/'}
+                </span>
+              </div>
+            );
+          })}
         </div>
       </div>
     );
@@ -80,28 +75,28 @@ const UserManualTable: React.FC<UserManualTableProps> = ({
             <th
               className={`${renderProductTableThClassName} !text-left  lg:!pl-[32px] pl-[32px]`}
             >
-              {t('HeroEECommon.productName')}
+              {t('service.downloads.productName')}
             </th>
             <th className={renderProductTableThClassName}>
-              {t('HeroEECommon.productDiagram')}
+              {t('service.downloads.diagram')}
             </th>
             <th className={renderProductTableThClassName}>
-              {t('HeroEECommon.batteryCapacity')}
+              {t('service.downloads.batteryCapacity')}
             </th>
             <th className={renderProductTableThClassName}>
-              {t('HeroEECommon.ratedPower')}
+              {t('service.downloads.cellCapacity')}
             </th>
             <th className={renderProductTableThClassName}>
-              {t('HeroEECommon.pvInputVoltage')}
+              {t('service.downloads.ratedVoltage')}
             </th>
             <th className={renderProductTableThClassName}>
-              {t('HeroEECommon.netWeight')}
+              {t('service.downloads.netWeight')}
             </th>
             <th className={renderProductTableThClassName}>
-              {t('HeroEECommon.brochureDownload')}
+              {t('service.downloads.brochureDownload')}
             </th>
             <th className={renderProductTableThClassName}>
-              {t('HeroEECommon.userManualDownload')}
+              {t('service.downloads.userManualDownload')}
             </th>
           </tr>
         </thead>
@@ -109,13 +104,13 @@ const UserManualTable: React.FC<UserManualTableProps> = ({
           {contentList.map((product) =>
             [
               <tr
-                key={`${product.id}-main`}
+                key={`${product.productKey}-main`}
                 className={`cursor-pointer odd:bg-[#F6F6F6] even:bg-[#FBF9FA] transition-colors duration-300  ${
                   expandedProduct === product.productKey ? 'bg-blue-50' : ''
                 }`}
                 ref={(el) => {
                   if (product.productKey) {
-                    productRefs.current[product.productKey] = el;
+                    productRefs.current[product.slug] = el;
                   }
                 }}
                 onClick={() => {
@@ -126,7 +121,7 @@ const UserManualTable: React.FC<UserManualTableProps> = ({
               >
                 <td className="text-nowrap p-[12px] lg:p-[12px] text-center text-[36px] lg:text-[18px] text-gray-600 border-b border-gray-100 align-middle">
                   <div className="flex text-primary font-semibold items-center  cursor-pointer  lg:py-[8px] lg:px-[16px] p-[16px]">
-                    {product.productName}
+                    {product.name}
                     <IconZhankai
                       className={`w-[30px] h-[30px] lg:w-[16px] lg:h-[16px] transition-transform duration-300 ml-[8px] text-primary ${
                         expandedProduct === product.productKey
@@ -139,29 +134,29 @@ const UserManualTable: React.FC<UserManualTableProps> = ({
                 <td className={renderProductTableTdClassName}>
                   <img
                     src={
-                      product.productFileUrl ||
-                      '/images/product-placeholder.png'
+                      product.image?.src || '/images/product-placeholder.png'
                     }
-                    alt={product.productName}
+                    alt={product.name}
                     className="w-[80px] h-[80px] lg:w-[64px] lg:h-[64px] object-contain rounded-[4px]"
                   />
                 </td>
+
                 <td className={renderProductTableTdClassName}>
-                  {product.capacity}
+                  {product.batteryCapacity || '/'}
                 </td>
                 <td className={renderProductTableTdClassName}>
-                  {product.power || '/'}
+                  {product.cellCapacity || '/'}
                 </td>
                 <td className={renderProductTableTdClassName}>
-                  {product.voltage || '/'}
+                  {product.ratedVoltage || '/'}
                 </td>
                 <td className={renderProductTableTdClassName}>
-                  {product.weight || '/'}
+                  {product.netWeight || '/'}
                 </td>
                 <td className={renderProductTableTdClassName}>
                   <div className="flex items-center justify-around lg:justify-center gap-[8px]">
                     <IconDownload
-                      className="w-[48px] h-[48px] lg:w-[24px] lg:h-[24px] cursor-pointer  mr-[8px] text-primary-blue"
+                      className="w-[48px] h-[48px] lg:w-[24px] lg:h-[24px] cursor-pointer  mr-[8px] text-primary"
                       onClick={(e) => {
                         e.stopPropagation();
                         downloadAction(product, 'brochure');
@@ -186,8 +181,8 @@ const UserManualTable: React.FC<UserManualTableProps> = ({
                 </td>
               </tr>,
               expandedProduct === product.productKey && (
-                <tr key={`${product.id}-expanded`} className="bg-white">
-                  <td className="p-[16px] lg:p-[28px] text-left" colSpan={6}>
+                <tr key={`${product.productKey}-expanded`} className="bg-white">
+                  <td className="p-[16px] lg:pl-[28px] text-left" colSpan={6}>
                     {renderProductFeatures(product)}
                   </td>
                   <td className={renderProductTableTdClassName}>
@@ -199,7 +194,7 @@ const UserManualTable: React.FC<UserManualTableProps> = ({
                         />
                       </div>
                       <span className="text-[24px] lg:text-[14px] text-gray-600 text-center">
-                        {t('HeroEECommon.brochureDownload')}
+                        {t('service.downloads.brochureDownload')}
                       </span>
                     </div>
                   </td>
@@ -212,13 +207,13 @@ const UserManualTable: React.FC<UserManualTableProps> = ({
                         />
                       </div>
                       <span className="text-[24px] lg:text-[14px] text-gray-600 text-center">
-                        {t('HeroEECommon.userManualDownload')}
+                        {t('service.downloads.userManualDownload')}
                       </span>
                     </div>
                   </td>
                 </tr>
               ),
-            ].filter(Boolean)
+            ].filter(Boolean),
           )}
         </tbody>
       </table>

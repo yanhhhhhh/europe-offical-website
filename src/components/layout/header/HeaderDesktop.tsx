@@ -149,7 +149,7 @@ function NavDropdown({ item }: NavDropdownProps) {
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
         >
-          <div className="container mx-auto p-[32px]">
+          <div className="container mx-auto py-[12px] ">
             <div className="flex justify-center gap-2 ">
               {item.children!.map((child) => (
                 <Link
@@ -195,12 +195,12 @@ export function HeaderDesktop() {
         </button>
 
         {isLangOpen && (
-          <div className="absolute right-0 mt-2 w-40 bg-white rounded-lg shadow-lg z-10 text-black">
+          <div className="absolute right-0  w-[120px] bg-white  shadow-lg z-10 text-black">
             {localeCodes.map((code) => (
               <Link
                 key={code}
                 href={`/${code}`}
-                className="block px-4 py-2 hover:bg-gray-100 first:rounded-t-lg last:rounded-b-lg"
+                className="block px-[16px] py-[8px] hover:bg-gray-100 first:rounded-t-lg last:rounded-b-lg"
               >
                 {code.toUpperCase()}
               </Link>

@@ -7,8 +7,8 @@ import l16sProductImage from '@/assets/images/products/l16s.webp';
 import r30ProductImage from '@/assets/images/products/r30.webp';
 import aio30ProductImage from '@/assets/images/products/aio30.webp';
 
-export type Product = {
-  slug: string;
+export type IProduct = {
+  productKey: string;
   name: string;
   batteryCapacity: string;
   cellCapacity: string;
@@ -22,6 +22,8 @@ export type Product = {
   image: StaticImageData;
 
   summaryKey: string;
+  albumUrl: string;
+  manualUrl: string;
   href: string;
   productFeatures?: {
     key: string;
@@ -29,9 +31,9 @@ export type Product = {
   }[];
 };
 
-export const products: Product[] = [
+export const products: IProduct[] = [
   {
-    slug: 'arkvolt-f8s',
+    productKey: 'arkvolt-f8s',
     name: 'ARKVOLT F8S',
     // diagram:'f8s-diagram.webp',
     batteryCapacity: '16076.8Wh',
@@ -46,6 +48,11 @@ export const products: Product[] = [
     image: f8sProductImage,
 
     summaryKey: 'f8s',
+    albumUrl:
+      'https://www.hero-ee.com/sales-package/zh_CN/pdfPreview?pdfUrl=https%3A%2F%2Fwww.hero-ee.com%2Foss%2Fhero-iot-oss-prod%2FsalePackage%2Fpdfs%2FHeroEE+1_%E5%8D%95%E9%A1%B5_V1.0.0_%E8%8B%B1%E6%96%87_0805-lii48s62x2.pdf',
+    manualUrl:
+      'https://www.hero-ee.com/sales-package/zh_CN/pdfPreview?pdfUrl=https%3A%2F%2Fwww.hero-ee.com%2Foss%2Fhero-iot-oss-prod%2FsalePackage%2Fpdfs%2FHeroEE+1_%E5%8D%95%E9%A1%B5_V1.0.0_%E8%8B%B1%E6%96%87_0805-lii48s62x2.pdf',
+
     href: `/products/arkvolt-f8s`,
     productFeatures: [
       {
@@ -76,7 +83,7 @@ export const products: Product[] = [
     ],
   },
   {
-    slug: 'arkvolt-l16',
+    productKey: 'arkvolt-l16',
     name: 'ARKVOLT L16',
     batteryCapacity: '16076.8Wh',
     cellCapacity: '314Ah',
@@ -88,6 +95,10 @@ export const products: Product[] = [
     current: '157A / 157A',
 
     image: l16ProductImage,
+    albumUrl:
+      'https://www.hero-ee.com/sales-package/zh_CN/pdfPreview?pdfUrl=https%3A%2F%2Fwww.hero-ee.com%2Foss%2Fhero-iot-oss-prod%2FsalePackage%2Fpdfs%2FHeroEE+1_%E5%8D%95%E9%A1%B5_V1.0.0_%E8%8B%B1%E6%96%87_0805-lii48s62x2.pdf',
+    manualUrl:
+      'https://www.hero-ee.com/sales-package/zh_CN/pdfPreview?pdfUrl=https%3A%2F%2Fwww.hero-ee.com%2Foss%2Fhero-iot-oss-prod%2FsalePackage%2Fpdfs%2FHeroEE+1_%E5%8D%95%E9%A1%B5_V1.0.0_%E8%8B%B1%E6%96%87_0805-lii48s62x2.pdf',
 
     summaryKey: 'l16',
     href: `/products/arkvolt-l16`,
@@ -120,7 +131,7 @@ export const products: Product[] = [
     ],
   },
   {
-    slug: 'arkvolt-l16s',
+    productKey: 'arkvolt-l16s',
     name: 'ARKVOLT L16S',
     batteryCapacity: '16076.8Wh',
     cellCapacity: '314Ah',
@@ -132,6 +143,10 @@ export const products: Product[] = [
     current: '157A / 157A',
 
     image: l16sProductImage,
+    albumUrl:
+      'https://www.hero-ee.com/sales-package/zh_CN/pdfPreview?pdfUrl=https%3A%2F%2Fwww.hero-ee.com%2Foss%2Fhero-iot-oss-prod%2FsalePackage%2Fpdfs%2FHeroEE+1_%E5%8D%95%E9%A1%B5_V1.0.0_%E8%8B%B1%E6%96%87_0805-lii48s62x2.pdf',
+    manualUrl:
+      'https://www.hero-ee.com/sales-package/zh_CN/pdfPreview?pdfUrl=https%3A%2F%2Fwww.hero-ee.com%2Foss%2Fhero-iot-oss-prod%2FsalePackage%2Fpdfs%2FHeroEE+1_%E5%8D%95%E9%A1%B5_V1.0.0_%E8%8B%B1%E6%96%87_0805-lii48s62x2.pdf',
 
     summaryKey: 'l16s',
     href: `/products/arkvolt-l16s`,
@@ -165,7 +180,7 @@ export const products: Product[] = [
   },
 
   {
-    slug: 'arkvolt-r30',
+    productKey: 'arkvolt-r30',
     name: 'ARKVOLT R30',
     model: 'HPC-30LV-22U',
     capacity: '30kWh / 43.2~58.4V',
@@ -177,6 +192,11 @@ export const products: Product[] = [
     current: '300A max',
 
     image: r30ProductImage,
+    albumUrl:
+      'https://www.hero-ee.com/sales-package/zh_CN/pdfPreview?pdfUrl=https%3A%2F%2Fwww.hero-ee.com%2Foss%2Fhero-iot-oss-prod%2FsalePackage%2Fpdfs%2FHeroEE+1_%E5%8D%95%E9%A1%B5_V1.0.0_%E8%8B%B1%E6%96%87_0805-lii48s62x2.pdf',
+    manualUrl:
+      'https://www.hero-ee.com/sales-package/zh_CN/pdfPreview?pdfUrl=https%3A%2F%2Fwww.hero-ee.com%2Foss%2Fhero-iot-oss-prod%2FsalePackage%2Fpdfs%2FHeroEE+1_%E5%8D%95%E9%A1%B5_V1.0.0_%E8%8B%B1%E6%96%87_0805-lii48s62x2.pdf',
+
     summaryKey: 'r30',
     href: `/products/arkvolt-r30`,
     productFeatures: [
@@ -208,7 +228,7 @@ export const products: Product[] = [
     ],
   },
   {
-    slug: 'arkvolt-aio30',
+    productKey: 'arkvolt-aio30',
     name: 'ARKVOLT AIO30',
     model: 'HPC-30LV-44U',
     capacity: '30kWh / 43.2~58.4V',
@@ -221,6 +241,11 @@ export const products: Product[] = [
     image: aio30ProductImage,
 
     summaryKey: 'aio30',
+    albumUrl:
+      'https://www.hero-ee.com/sales-package/zh_CN/pdfPreview?pdfUrl=https%3A%2F%2Fwww.hero-ee.com%2Foss%2Fhero-iot-oss-prod%2FsalePackage%2Fpdfs%2FHeroEE+1_%E5%8D%95%E9%A1%B5_V1.0.0_%E8%8B%B1%E6%96%87_0805-lii48s62x2.pdf',
+    manualUrl:
+      'https://www.hero-ee.com/sales-package/zh_CN/pdfPreview?pdfUrl=https%3A%2F%2Fwww.hero-ee.com%2Foss%2Fhero-iot-oss-prod%2FsalePackage%2Fpdfs%2FHeroEE+1_%E5%8D%95%E9%A1%B5_V1.0.0_%E8%8B%B1%E6%96%87_0805-lii48s62x2.pdf',
+
     href: `/products/arkvolt-r30`, // 目前没有单独的详情页，先跳转到 R30 的详情页
     productFeatures: [
       {

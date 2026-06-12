@@ -122,7 +122,9 @@
       "cycleLife": "Cycle Life",
       "rating": " Rating",
       "certifications": "Certifications",
-      "dimensions": "Dimensions"
+      "dimensions": "Dimensions",
+      "brochureDownload": "Brochure Download",
+      "userManualDownload": "User Manual Download"
     }
   },
   "footer": {
