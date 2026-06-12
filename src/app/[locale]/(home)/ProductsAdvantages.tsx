@@ -11,17 +11,17 @@ export default async function ProductsAdvantages() {
       <div className="hidden lg:block w-full h-[800px] relative">
         <div className="absolute inset-0">
           {/* 标题 - y=2523, 相对于y=2463容器，top=60px */}
-          <h2 className="absolute left-1/2 -translate-x-1/2 top-[60px] text-[72px] font-normal leading-[72px] text-center text-[#202326] whitespace-nowrap">
+          <h2 className="absolute left-1/2 -translate-x-1/2 top-[60px] text-[48px] font-bold text-center  whitespace-nowrap">
             {t('home.advantages.title')}
           </h2>
 
           {/* 中心六边形图片 - x="762" y="2709", 相对于y=2463, top=246px */}
-          <div className="absolute left-[762px] top-[246px] w-[396px] h-[396px]">
+          <div className="absolute left-1/2 -translate-x-1/2  top-[246px] w-auto h-[396px]">
             <Image
               src={homeAdvantagesImage}
               alt={t('home.advantages.imageAlt')}
-              width={396}
-              height={396}
+              // width={880}
+              // height={396}
               className="w-full h-full object-contain"
             />
           </div>
@@ -91,7 +91,6 @@ export default async function ProductsAdvantages() {
               </div>
             </div>
             {/* 连接线 */}
-            <div className="absolute top-[18px] right-[587px] w-[220px] h-[1px] bg-[#E6E9ED]" />
           </div>
         </div>
       </div>

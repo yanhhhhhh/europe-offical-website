@@ -257,19 +257,14 @@ export const HeroCard = (props: HeroCardProps) => {
           </motion.div>
         )}
         {moreType === 'contactUs' && more && (
-          <a
-            className={moreClass}
-            href={more}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <div className={moreClass}>
             <Link
               href={more}
               className="no-underline cursor-pointer !text-white border  block mt-[36px] px-[110px] py-[18px] lg:px-[90px] lg:py-[12px] border-white rounded-[90px]"
             >
               {t('common.contact')}
             </Link>
-          </a>
+          </div>
         )}
         {moreType === 'learnMore' && more && (
           <div className={moreClass}>{t('button.learnMore')}&gt;</div>

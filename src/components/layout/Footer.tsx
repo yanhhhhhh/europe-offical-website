@@ -11,7 +11,7 @@ export default function Footer() {
   const t = useTranslations('footer');
 
   return (
-    <footer className="bg-gray-900 text-white mt-[64px]">
+    <footer className="bg-gray-900 text-white">
       <div className="container mx-auto px-[16px] py-[48px]">
         {/* 页脚内容网格 */}
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-2 mb-[32px]">

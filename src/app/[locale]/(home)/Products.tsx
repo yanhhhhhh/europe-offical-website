@@ -20,7 +20,7 @@ export default async function Products() {
             />
             <div className="absolute bottom-[20px] left-1/2 -translate-x-1/2 w-full px-[10px]">
               <h2 className="text-[24px] font-bold  text-center">
-                {t(product.name)}
+                {product.name}
               </h2>
               <p className="text-[18px] text-[#696969] text-center">
                 {product.capacity}
