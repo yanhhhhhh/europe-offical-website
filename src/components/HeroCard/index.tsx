@@ -10,7 +10,7 @@ import { useMotionTextAnimation } from '@/hooks/useMotionTextAnimation';
 // import { getLanguageCode } from '@/utils/languageCode';
 
 import { motion, useInView } from 'motion/react';
-import { useTranslations } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 
 import Image, { StaticImageData } from 'next/image';
 
@@ -52,10 +52,9 @@ export interface HeroCardProps extends PropsWithChildren {
 }
 export const HeroCard = (props: HeroCardProps) => {
   const t = useTranslations();
+  const languageCode = useLocale(); // 获取当前语言环境
 
   // const { locale } = useAtomValue(baseConfigAtom);
-
-  const languageCode = 'en'; // getLanguageCode(locale);
 
   const {
     title,
@@ -104,19 +103,19 @@ export const HeroCard = (props: HeroCardProps) => {
   );
   const cardClass = `hero-card  relative flex justify-center w-screen h-[1210px] lg:h-[800px]  ${cardClassName}`;
   const cardContentClass = `hero-card-content relative lg:pt-[46px] pt-[40px] flex flex-col items-center  text-center
-    ${languageCode == 'en' ? 'leading-[1.2]' : ''}
+    ${languageCode == 'en' ? 'leading-[1.5]' : ''}
   ${cardContentClassName}`;
 
   const titleClass = `hero-card-title lg:text-[46px]    font-bold  ${titleClassName}
   ${
     languageCode == 'en'
-      ? 'text-[48px] leading-[1.2]'
+      ? 'text-[48px] leading-[1.5]'
       : 'text-[58px] leading-[1.5]'
   }
   `;
   const descriptionClass = `hero-card-description lg:text-[24px]  font-normal text-center mt-[10px]  ${
     languageCode == 'en'
-      ? 'text-[32px] leading-[1.2]'
+      ? 'text-[32px] leading-[1.5]'
       : 'text-[40px] leading-[1.5]'
   } ${descriptionClassName}`;
   const moreClass = `hero-card-more lg:text-[22px] text-[32px] font-normal  text-primary cursor-pointer no-underline mt-[10px] ${moreClassName}`;
@@ -264,8 +263,12 @@ export const HeroCard = (props: HeroCardProps) => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            {/* {t('button.contactUs')}&gt; */}
-            contactUs
+            <Link
+              href={more}
+              className="no-underline cursor-pointer !text-white border  block mt-[36px] px-[110px] py-[18px] lg:px-[90px] lg:py-[12px] border-white rounded-[90px]"
+            >
+              {t('common.contact')}
+            </Link>
           </a>
         )}
         {moreType === 'learnMore' && more && (

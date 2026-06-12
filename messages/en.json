@@ -20,22 +20,14 @@
   "home": {
     "solutions": {
       "title": "Energy solutions",
-      "intro": "The global-leading provider of energy-storage battery and system solutions, offering full-scenario energy-storage products to more than 20 countries and regions worldwide.",
+      "description": "World-class provider of energy storage products and system solutions for global markets across 20+ regions.",
       "homeTitle": "Home ESS",
-      "homeText": "Self-developed long-life battery cells provide safe and intelligent energy storage solutions, making household electricity use greener and more cost-effective.",
+      "homeText": "Self - developed long - life battery cells, providing safe and intelligent energy storage solutions. Making household electricity use more independent, greener and more cost - effective.",
       "commercialTitle": "C&I Energy Storage",
-      "commercialText": "Reliable battery cell technology supports enterprise energy efficiency, electricity cost reduction, and green transformation."
+      "commercialText": "Self - developed top - tier battery cells provide reliable power guarantee for enterprises. The system supports multiple profit models, effectively reducing electricity costs, enhancing energy efficiency, and supporting green transformation."
     },
     "products": {
-      "title": "Products",
-      "selector": {
-        "title": "ARKVOLT Series",
-        "intro": "Product technology selection for low-voltage, high-voltage, and all-in-one storage needs.",
-        "batteryEnergy": "Battery Energy",
-        "voltageRange": "Voltage Range",
-        "current": "Current",
-        "netWeight": "Net Weight"
-      }
+      "title": "Products"
     },
     "advantages": {
       "title": "Product advantages",
@@ -57,10 +49,14 @@
         "text": "Smart manufacturing production line lowers ecological impact."
       }
     },
-    "cooperation": {
+    "aboutUs": {
+      "title": "HiTHIUM Home Energy Storage | About Us",
+      "description": "HiTHIUM Home Energy Storage is a wholly - owned subsidiary of Xiamen Hithium Energy Storage Technology Co., Ltd. It focuses on providing intelligent and safe residential energy storage solutions for families around the world.Relying on the technical accumulation and manufacturing advantages of the group as the original battery cell manufacturer, it offers high - quality and reliable energy storage products to promote the green energy transformation."
+    },
+    "cooperate": {
       "title": "Cooperate for mutual benefit",
-      "text": "HiTHIUM Home Energy Storage is trustworthy. It provides all-round support to its partners, helping build a reliable reputation in the energy storage market.",
-      "cta": "Contact Us",
+      "description": "HiTHIUM Home Energy Storage is trustworthy. It provides all-round support to its partners, helping build a reliable reputation in the energy storage market.",
+
       "imageAlt": "Energy storage field service team"
     },
     "newsletter": {

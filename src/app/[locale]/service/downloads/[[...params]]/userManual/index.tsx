@@ -5,35 +5,63 @@ import { useParams } from 'next/navigation';
 import UserManualTable from './UserManualTable';
 import { decodeURIComponentString } from '@/utils/location';
 import { products } from '@/constants/products';
+
+type ManualExpansionState = {
+  routeKey: string;
+  value: string;
+};
+
 const UserManual = () => {
-  const [expandedProduct, setExpandedProduct] = useState<string>('');
+  const [manualExpansion, setManualExpansion] =
+    useState<ManualExpansionState | null>(null);
 
   const params = useParams() as {
     params?: string[]; // [productKey]
   };
-  console.log('params', params);
   const [productKeyEncoded] = params.params ?? [];
-  const productKey = decodeURIComponentString(productKeyEncoded);
+  const productKey = decodeURIComponentString(productKeyEncoded) ?? '';
+  const routeExpandedProduct = products.some(
+    (product) => product.productKey === productKey,
+  )
+    ? productKey
+    : '';
+  const expandedProduct =
+    manualExpansion && manualExpansion.routeKey === routeExpandedProduct
+      ? manualExpansion.value
+      : routeExpandedProduct;
 
   const productRefs = useRef<{ [key: string]: HTMLTableRowElement | null }>({});
 
-  const toggleProductExpansion = (productKey: string) => {
-    setExpandedProduct(expandedProduct === productKey ? '' : productKey);
+  const toggleProductExpansion = (nextProductKey: string) => {
+    setManualExpansion((currentState) => {
+      const currentExpanded =
+        currentState && currentState.routeKey === routeExpandedProduct
+          ? currentState.value
+          : routeExpandedProduct;
+
+      return {
+        routeKey: routeExpandedProduct,
+        value: currentExpanded === nextProductKey ? '' : nextProductKey,
+      };
+    });
   };
 
   useEffect(() => {
-    if (productKey && products.length > 0) {
-      setExpandedProduct(productKey);
-      setTimeout(() => {
-        if (productKey) {
-          const element = productRefs.current[productKey];
-          if (element) {
-            element.scrollIntoView({ behavior: 'smooth', block: 'center' });
-          }
-        }
-      }, 100);
+    if (!routeExpandedProduct) {
+      return;
     }
-  }, [productKey, products]);
+
+    const timeoutId = window.setTimeout(() => {
+      const element = productRefs.current[routeExpandedProduct];
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }
+    }, 100);
+
+    return () => {
+      window.clearTimeout(timeoutId);
+    };
+  }, [routeExpandedProduct]);
 
   return (
     <div className="p-[16px] lg:px-[150px] lg:py-[20px] box-border">

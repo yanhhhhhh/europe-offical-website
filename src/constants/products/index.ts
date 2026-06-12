@@ -30,249 +30,252 @@ export type IProduct = {
     value: string;
   }[];
 };
+export const arkvoltF8s = {
+  productKey: 'arkvolt-f8s',
+  name: 'ARKVOLT F8S',
+  // diagram:'f8s-diagram.webp',
+  batteryCapacity: '16076.8Wh',
+  cellCapacity: '314Ah',
+  ratedVoltage: '576[VDC]',
+  netWeight: '176kg',
+  model: 'HSM-8K16HV-2M',
+  capacity: '16kWh / 482~657V', //导航等卡片使用
+  voltage: '481.6~657.0V',
+  current: '12.5A / 12.5A',
 
+  image: f8sProductImage,
+
+  summaryKey: 'f8s',
+  albumUrl:
+    'https://www.hero-ee.com/sales-package/zh_CN/pdfPreview?pdfUrl=https%3A%2F%2Fwww.hero-ee.com%2Foss%2Fhero-iot-oss-prod%2FsalePackage%2Fpdfs%2FHeroEE+1_%E5%8D%95%E9%A1%B5_V1.0.0_%E8%8B%B1%E6%96%87_0805-lii48s62x2.pdf',
+  manualUrl:
+    'https://www.hero-ee.com/sales-package/zh_CN/pdfPreview?pdfUrl=https%3A%2F%2Fwww.hero-ee.com%2Foss%2Fhero-iot-oss-prod%2FsalePackage%2Fpdfs%2FHeroEE+1_%E5%8D%95%E9%A1%B5_V1.0.0_%E8%8B%B1%E6%96%87_0805-lii48s62x2.pdf',
+
+  href: `/products/arkvolt-f8s`,
+  productFeatures: [
+    {
+      key: 'operationVoltageRange',
+      value: '481.6~657.0[VDC]',
+    },
+    {
+      key: 'maximumChargeDischargeCurrent',
+      value: '12.5A/12.5A',
+    },
+    {
+      key: 'cycleLife',
+      value: '8000 cycles, @25°C, @0.5C, @90%DOD, @70%EOL',
+    },
+    {
+      key: 'rating',
+      value: 'IP65',
+    },
+
+    {
+      key: 'certifications',
+      value: 'CE, IEC62619, IEC62040, UN38.3, MSDS, ROHS, REACH',
+    },
+    {
+      key: 'dimensions',
+      value: 'L597*W263*H1124mm',
+    },
+  ],
+};
+export const arkvoltL16 = {
+  productKey: 'arkvolt-l16',
+  name: 'ARKVOLT L16',
+  batteryCapacity: '16076.8Wh',
+  cellCapacity: '314Ah',
+  ratedVoltage: '51.2[VDC]',
+  netWeight: '123kg',
+  model: 'HPB-16LV',
+  capacity: '16kWh / 44.8~57.6V',
+  voltage: '44.8~57.6V',
+  current: '157A / 157A',
+
+  image: l16ProductImage,
+  albumUrl:
+    'https://www.hero-ee.com/sales-package/zh_CN/pdfPreview?pdfUrl=https%3A%2F%2Fwww.hero-ee.com%2Foss%2Fhero-iot-oss-prod%2FsalePackage%2Fpdfs%2FHeroEE+1_%E5%8D%95%E9%A1%B5_V1.0.0_%E8%8B%B1%E6%96%87_0805-lii48s62x2.pdf',
+  manualUrl:
+    'https://www.hero-ee.com/sales-package/zh_CN/pdfPreview?pdfUrl=https%3A%2F%2Fwww.hero-ee.com%2Foss%2Fhero-iot-oss-prod%2FsalePackage%2Fpdfs%2FHeroEE+1_%E5%8D%95%E9%A1%B5_V1.0.0_%E8%8B%B1%E6%96%87_0805-lii48s62x2.pdf',
+
+  summaryKey: 'l16',
+  href: `/products/arkvolt-l16`,
+  productFeatures: [
+    {
+      key: 'operationVoltageRange',
+      value: '481.6~657.0[VDC]',
+    },
+    {
+      key: 'maximumChargeDischargeCurrent',
+      value: '12.5A/12.5A',
+    },
+    {
+      key: 'cycleLife',
+      value: '8000 cycles, @25°C, @0.5C, @90%DOD, @70%EOL',
+    },
+    {
+      key: 'rating',
+      value: 'IP65',
+    },
+
+    {
+      key: 'certifications',
+      value: 'CE, IEC62619, IEC62040, UN38.3, MSDS, ROHS, REACH',
+    },
+    {
+      key: 'dimensions',
+      value: 'L597*W263*H1124mm',
+    },
+  ],
+};
+export const arkvoltL16s = {
+  productKey: 'arkvolt-l16s',
+  name: 'ARKVOLT L16S',
+  batteryCapacity: '16076.8Wh',
+  cellCapacity: '314Ah',
+  ratedVoltage: '51.2[VDC]',
+  netWeight: '137.5kg',
+  model: 'HPB-16LV-S',
+  capacity: '16kWh / 44.8~57.6V',
+  voltage: '44.8~57.6V',
+  current: '157A / 157A',
+
+  image: l16sProductImage,
+  albumUrl:
+    'https://www.hero-ee.com/sales-package/zh_CN/pdfPreview?pdfUrl=https%3A%2F%2Fwww.hero-ee.com%2Foss%2Fhero-iot-oss-prod%2FsalePackage%2Fpdfs%2FHeroEE+1_%E5%8D%95%E9%A1%B5_V1.0.0_%E8%8B%B1%E6%96%87_0805-lii48s62x2.pdf',
+  manualUrl:
+    'https://www.hero-ee.com/sales-package/zh_CN/pdfPreview?pdfUrl=https%3A%2F%2Fwww.hero-ee.com%2Foss%2Fhero-iot-oss-prod%2FsalePackage%2Fpdfs%2FHeroEE+1_%E5%8D%95%E9%A1%B5_V1.0.0_%E8%8B%B1%E6%96%87_0805-lii48s62x2.pdf',
+
+  summaryKey: 'l16s',
+  href: `/products/arkvolt-l16s`,
+  productFeatures: [
+    {
+      key: 'operationVoltageRange',
+      value: '481.6~657.0[VDC]',
+    },
+    {
+      key: 'maximumChargeDischargeCurrent',
+      value: '12.5A/12.5A',
+    },
+    {
+      key: 'cycleLife',
+      value: '8000 cycles, @25°C, @0.5C, @90%DOD, @70%EOL',
+    },
+    {
+      key: 'rating',
+      value: 'IP65',
+    },
+
+    {
+      key: 'certifications',
+      value: 'CE, IEC62619, IEC62040, UN38.3, MSDS, ROHS, REACH',
+    },
+    {
+      key: 'dimensions',
+      value: 'L597*W263*H1124mm',
+    },
+  ],
+};
+export const arkvoltR30 = {
+  productKey: 'arkvolt-r30',
+  name: 'ARKVOLT R30',
+  model: 'HPC-30LV-22U',
+  capacity: '30kWh / 43.2~58.4V',
+  batteryCapacity: '30054.4Wh',
+  cellCapacity: '587Ah',
+  ratedVoltage: '51.2[VDC]',
+  netWeight: '350kg',
+  voltage: '44.8~58.4V',
+  current: '300A max',
+
+  image: r30ProductImage,
+  albumUrl:
+    'https://www.hero-ee.com/sales-package/zh_CN/pdfPreview?pdfUrl=https%3A%2F%2Fwww.hero-ee.com%2Foss%2Fhero-iot-oss-prod%2FsalePackage%2Fpdfs%2FHeroEE+1_%E5%8D%95%E9%A1%B5_V1.0.0_%E8%8B%B1%E6%96%87_0805-lii48s62x2.pdf',
+  manualUrl:
+    'https://www.hero-ee.com/sales-package/zh_CN/pdfPreview?pdfUrl=https%3A%2F%2Fwww.hero-ee.com%2Foss%2Fhero-iot-oss-prod%2FsalePackage%2Fpdfs%2FHeroEE+1_%E5%8D%95%E9%A1%B5_V1.0.0_%E8%8B%B1%E6%96%87_0805-lii48s62x2.pdf',
+
+  summaryKey: 'r30',
+  href: `/products/arkvolt-r30`,
+  productFeatures: [
+    {
+      key: 'operationVoltageRange',
+      value: '481.6~657.0[VDC]',
+    },
+    {
+      key: 'maximumChargeDischargeCurrent',
+      value: '12.5A/12.5A',
+    },
+    {
+      key: 'cycleLife',
+      value: '8000 cycles, @25°C, @0.5C, @90%DOD, @70%EOL',
+    },
+    {
+      key: 'rating',
+      value: 'IP65',
+    },
+
+    {
+      key: 'certifications',
+      value: 'CE, IEC62619, IEC62040, UN38.3, MSDS, ROHS, REACH',
+    },
+    {
+      key: 'dimensions',
+      value: 'L597*W263*H1124mm',
+    },
+  ],
+};
+export const arkvoltAio30 = {
+  productKey: 'arkvolt-aio30',
+  name: 'ARKVOLT AIO30',
+  model: 'HPC-30LV-44U',
+  capacity: '30kWh / 43.2~58.4V',
+  voltage: '44.8~58.4V',
+  current: '300A max',
+  batteryCapacity: '30054.4Wh',
+  cellCapacity: '587Ah',
+  ratedVoltage: '51.2[VDC]',
+  netWeight: '600kg',
+  image: aio30ProductImage,
+
+  summaryKey: 'aio30',
+  albumUrl:
+    'https://www.hero-ee.com/sales-package/zh_CN/pdfPreview?pdfUrl=https%3A%2F%2Fwww.hero-ee.com%2Foss%2Fhero-iot-oss-prod%2FsalePackage%2Fpdfs%2FHeroEE+1_%E5%8D%95%E9%A1%B5_V1.0.0_%E8%8B%B1%E6%96%87_0805-lii48s62x2.pdf',
+  manualUrl:
+    'https://www.hero-ee.com/sales-package/zh_CN/pdfPreview?pdfUrl=https%3A%2F%2Fwww.hero-ee.com%2Foss%2Fhero-iot-oss-prod%2FsalePackage%2Fpdfs%2FHeroEE+1_%E5%8D%95%E9%A1%B5_V1.0.0_%E8%8B%B1%E6%96%87_0805-lii48s62x2.pdf',
+
+  href: `/products/arkvolt-r30`, // 目前没有单独的详情页，先跳转到 R30 的详情页
+  productFeatures: [
+    {
+      key: 'operationVoltageRange',
+      value: '481.6~657.0[VDC]',
+    },
+    {
+      key: 'maximumChargeDischargeCurrent',
+      value: '12.5A/12.5A',
+    },
+    {
+      key: 'cycleLife',
+      value: '8000 cycles, @25°C, @0.5C, @90%DOD, @70%EOL',
+    },
+    {
+      key: 'rating',
+      value: 'IP65',
+    },
+
+    {
+      key: 'certifications',
+      value: 'CE, IEC62619, IEC62040, UN38.3, MSDS, ROHS, REACH',
+    },
+    {
+      key: 'dimensions',
+      value: 'L597*W263*H1124mm',
+    },
+  ],
+};
 export const products: IProduct[] = [
-  {
-    productKey: 'arkvolt-f8s',
-    name: 'ARKVOLT F8S',
-    // diagram:'f8s-diagram.webp',
-    batteryCapacity: '16076.8Wh',
-    cellCapacity: '314Ah',
-    ratedVoltage: '576[VDC]',
-    netWeight: '176kg',
-    model: 'HSM-8K16HV-2M',
-    capacity: '16kWh / 482~657V', //导航等卡片使用
-    voltage: '481.6~657.0V',
-    current: '12.5A / 12.5A',
-
-    image: f8sProductImage,
-
-    summaryKey: 'f8s',
-    albumUrl:
-      'https://www.hero-ee.com/sales-package/zh_CN/pdfPreview?pdfUrl=https%3A%2F%2Fwww.hero-ee.com%2Foss%2Fhero-iot-oss-prod%2FsalePackage%2Fpdfs%2FHeroEE+1_%E5%8D%95%E9%A1%B5_V1.0.0_%E8%8B%B1%E6%96%87_0805-lii48s62x2.pdf',
-    manualUrl:
-      'https://www.hero-ee.com/sales-package/zh_CN/pdfPreview?pdfUrl=https%3A%2F%2Fwww.hero-ee.com%2Foss%2Fhero-iot-oss-prod%2FsalePackage%2Fpdfs%2FHeroEE+1_%E5%8D%95%E9%A1%B5_V1.0.0_%E8%8B%B1%E6%96%87_0805-lii48s62x2.pdf',
-
-    href: `/products/arkvolt-f8s`,
-    productFeatures: [
-      {
-        key: 'operationVoltageRange',
-        value: '481.6~657.0[VDC]',
-      },
-      {
-        key: 'maximumChargeDischargeCurrent',
-        value: '12.5A/12.5A',
-      },
-      {
-        key: 'cycleLife',
-        value: '8000 cycles, @25°C, @0.5C, @90%DOD, @70%EOL',
-      },
-      {
-        key: 'rating',
-        value: 'IP65',
-      },
-
-      {
-        key: 'certifications',
-        value: 'CE, IEC62619, IEC62040, UN38.3, MSDS, ROHS, REACH',
-      },
-      {
-        key: 'dimensions',
-        value: 'L597*W263*H1124mm',
-      },
-    ],
-  },
-  {
-    productKey: 'arkvolt-l16',
-    name: 'ARKVOLT L16',
-    batteryCapacity: '16076.8Wh',
-    cellCapacity: '314Ah',
-    ratedVoltage: '51.2[VDC]',
-    netWeight: '123kg',
-    model: 'HPB-16LV',
-    capacity: '16kWh / 44.8~57.6V',
-    voltage: '44.8~57.6V',
-    current: '157A / 157A',
-
-    image: l16ProductImage,
-    albumUrl:
-      'https://www.hero-ee.com/sales-package/zh_CN/pdfPreview?pdfUrl=https%3A%2F%2Fwww.hero-ee.com%2Foss%2Fhero-iot-oss-prod%2FsalePackage%2Fpdfs%2FHeroEE+1_%E5%8D%95%E9%A1%B5_V1.0.0_%E8%8B%B1%E6%96%87_0805-lii48s62x2.pdf',
-    manualUrl:
-      'https://www.hero-ee.com/sales-package/zh_CN/pdfPreview?pdfUrl=https%3A%2F%2Fwww.hero-ee.com%2Foss%2Fhero-iot-oss-prod%2FsalePackage%2Fpdfs%2FHeroEE+1_%E5%8D%95%E9%A1%B5_V1.0.0_%E8%8B%B1%E6%96%87_0805-lii48s62x2.pdf',
-
-    summaryKey: 'l16',
-    href: `/products/arkvolt-l16`,
-    productFeatures: [
-      {
-        key: 'operationVoltageRange',
-        value: '481.6~657.0[VDC]',
-      },
-      {
-        key: 'maximumChargeDischargeCurrent',
-        value: '12.5A/12.5A',
-      },
-      {
-        key: 'cycleLife',
-        value: '8000 cycles, @25°C, @0.5C, @90%DOD, @70%EOL',
-      },
-      {
-        key: 'rating',
-        value: 'IP65',
-      },
-
-      {
-        key: 'certifications',
-        value: 'CE, IEC62619, IEC62040, UN38.3, MSDS, ROHS, REACH',
-      },
-      {
-        key: 'dimensions',
-        value: 'L597*W263*H1124mm',
-      },
-    ],
-  },
-  {
-    productKey: 'arkvolt-l16s',
-    name: 'ARKVOLT L16S',
-    batteryCapacity: '16076.8Wh',
-    cellCapacity: '314Ah',
-    ratedVoltage: '51.2[VDC]',
-    netWeight: '137.5kg',
-    model: 'HPB-16LV-S',
-    capacity: '16kWh / 44.8~57.6V',
-    voltage: '44.8~57.6V',
-    current: '157A / 157A',
-
-    image: l16sProductImage,
-    albumUrl:
-      'https://www.hero-ee.com/sales-package/zh_CN/pdfPreview?pdfUrl=https%3A%2F%2Fwww.hero-ee.com%2Foss%2Fhero-iot-oss-prod%2FsalePackage%2Fpdfs%2FHeroEE+1_%E5%8D%95%E9%A1%B5_V1.0.0_%E8%8B%B1%E6%96%87_0805-lii48s62x2.pdf',
-    manualUrl:
-      'https://www.hero-ee.com/sales-package/zh_CN/pdfPreview?pdfUrl=https%3A%2F%2Fwww.hero-ee.com%2Foss%2Fhero-iot-oss-prod%2FsalePackage%2Fpdfs%2FHeroEE+1_%E5%8D%95%E9%A1%B5_V1.0.0_%E8%8B%B1%E6%96%87_0805-lii48s62x2.pdf',
-
-    summaryKey: 'l16s',
-    href: `/products/arkvolt-l16s`,
-    productFeatures: [
-      {
-        key: 'operationVoltageRange',
-        value: '481.6~657.0[VDC]',
-      },
-      {
-        key: 'maximumChargeDischargeCurrent',
-        value: '12.5A/12.5A',
-      },
-      {
-        key: 'cycleLife',
-        value: '8000 cycles, @25°C, @0.5C, @90%DOD, @70%EOL',
-      },
-      {
-        key: 'rating',
-        value: 'IP65',
-      },
-
-      {
-        key: 'certifications',
-        value: 'CE, IEC62619, IEC62040, UN38.3, MSDS, ROHS, REACH',
-      },
-      {
-        key: 'dimensions',
-        value: 'L597*W263*H1124mm',
-      },
-    ],
-  },
-
-  {
-    productKey: 'arkvolt-r30',
-    name: 'ARKVOLT R30',
-    model: 'HPC-30LV-22U',
-    capacity: '30kWh / 43.2~58.4V',
-    batteryCapacity: '30054.4Wh',
-    cellCapacity: '587Ah',
-    ratedVoltage: '51.2[VDC]',
-    netWeight: '350kg',
-    voltage: '44.8~58.4V',
-    current: '300A max',
-
-    image: r30ProductImage,
-    albumUrl:
-      'https://www.hero-ee.com/sales-package/zh_CN/pdfPreview?pdfUrl=https%3A%2F%2Fwww.hero-ee.com%2Foss%2Fhero-iot-oss-prod%2FsalePackage%2Fpdfs%2FHeroEE+1_%E5%8D%95%E9%A1%B5_V1.0.0_%E8%8B%B1%E6%96%87_0805-lii48s62x2.pdf',
-    manualUrl:
-      'https://www.hero-ee.com/sales-package/zh_CN/pdfPreview?pdfUrl=https%3A%2F%2Fwww.hero-ee.com%2Foss%2Fhero-iot-oss-prod%2FsalePackage%2Fpdfs%2FHeroEE+1_%E5%8D%95%E9%A1%B5_V1.0.0_%E8%8B%B1%E6%96%87_0805-lii48s62x2.pdf',
-
-    summaryKey: 'r30',
-    href: `/products/arkvolt-r30`,
-    productFeatures: [
-      {
-        key: 'operationVoltageRange',
-        value: '481.6~657.0[VDC]',
-      },
-      {
-        key: 'maximumChargeDischargeCurrent',
-        value: '12.5A/12.5A',
-      },
-      {
-        key: 'cycleLife',
-        value: '8000 cycles, @25°C, @0.5C, @90%DOD, @70%EOL',
-      },
-      {
-        key: 'rating',
-        value: 'IP65',
-      },
-
-      {
-        key: 'certifications',
-        value: 'CE, IEC62619, IEC62040, UN38.3, MSDS, ROHS, REACH',
-      },
-      {
-        key: 'dimensions',
-        value: 'L597*W263*H1124mm',
-      },
-    ],
-  },
-  {
-    productKey: 'arkvolt-aio30',
-    name: 'ARKVOLT AIO30',
-    model: 'HPC-30LV-44U',
-    capacity: '30kWh / 43.2~58.4V',
-    voltage: '44.8~58.4V',
-    current: '300A max',
-    batteryCapacity: '30054.4Wh',
-    cellCapacity: '587Ah',
-    ratedVoltage: '51.2[VDC]',
-    netWeight: '600kg',
-    image: aio30ProductImage,
-
-    summaryKey: 'aio30',
-    albumUrl:
-      'https://www.hero-ee.com/sales-package/zh_CN/pdfPreview?pdfUrl=https%3A%2F%2Fwww.hero-ee.com%2Foss%2Fhero-iot-oss-prod%2FsalePackage%2Fpdfs%2FHeroEE+1_%E5%8D%95%E9%A1%B5_V1.0.0_%E8%8B%B1%E6%96%87_0805-lii48s62x2.pdf',
-    manualUrl:
-      'https://www.hero-ee.com/sales-package/zh_CN/pdfPreview?pdfUrl=https%3A%2F%2Fwww.hero-ee.com%2Foss%2Fhero-iot-oss-prod%2FsalePackage%2Fpdfs%2FHeroEE+1_%E5%8D%95%E9%A1%B5_V1.0.0_%E8%8B%B1%E6%96%87_0805-lii48s62x2.pdf',
-
-    href: `/products/arkvolt-r30`, // 目前没有单独的详情页，先跳转到 R30 的详情页
-    productFeatures: [
-      {
-        key: 'operationVoltageRange',
-        value: '481.6~657.0[VDC]',
-      },
-      {
-        key: 'maximumChargeDischargeCurrent',
-        value: '12.5A/12.5A',
-      },
-      {
-        key: 'cycleLife',
-        value: '8000 cycles, @25°C, @0.5C, @90%DOD, @70%EOL',
-      },
-      {
-        key: 'rating',
-        value: 'IP65',
-      },
-
-      {
-        key: 'certifications',
-        value: 'CE, IEC62619, IEC62040, UN38.3, MSDS, ROHS, REACH',
-      },
-      {
-        key: 'dimensions',
-        value: 'L597*W263*H1124mm',
-      },
-    ],
-  },
+  arkvoltF8s,
+  arkvoltL16,
+  arkvoltL16s,
+  arkvoltR30,
+  arkvoltAio30,
 ];

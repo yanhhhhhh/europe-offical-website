@@ -110,7 +110,7 @@ const UserManualTable: React.FC<UserManualTableProps> = ({
                 }`}
                 ref={(el) => {
                   if (product.productKey) {
-                    productRefs.current[product.slug] = el;
+                    productRefs.current[product.productKey] = el;
                   }
                 }}
                 onClick={() => {

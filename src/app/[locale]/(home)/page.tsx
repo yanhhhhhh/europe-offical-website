@@ -1,6 +1,10 @@
 import { locales } from '@/constants/navigation';
 import { HomeBanner } from './banner';
-
+import HomeCooperate from './Cooperate';
+import HomeAboutUs from './AboutUs';
+import ProductsAdvantages from './ProductsAdvantages';
+import EnergySolutions from './EngerySolutions';
+import HomeProducts from './Products';
 type PageProps = {
   params: Promise<{ locale: string }>;
 };
@@ -15,6 +19,11 @@ export default async function LocaleHome({ params }: PageProps) {
   return (
     <>
       <HomeBanner />
+      <EnergySolutions />
+      <HomeProducts />
+      <ProductsAdvantages />
+      <HomeAboutUs />
+      <HomeCooperate />
     </>
   );
 }
