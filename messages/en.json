@@ -124,17 +124,8 @@
     }
   },
   "footer": {
-    "company": "Company",
-    "about": "About Us",
-    "contact": "Contact Us",
-    "news": "Latest News",
-    "cooperation": "Cooperation",
-    "residential": "Residential ESS Solutions",
-    "commercial": "C&I ESS Solutions",
-    "afterSales": "After-Sales Service",
-    "manual": "Manual Download",
-    "privacy": "Privacy Policy",
-    "terms": "User Agreement",
-    "legal": "Copyright © Shenzhen Hithium Hero Energy Technology Co., Ltd."
+    "copyright": "Copyright",
+    "forMoreInformation": "For more information",
+    "pleaseContactUsViaOurOfficialEmail": "please contact us via our official email"
   }
 }

@@ -14,5 +14,19 @@
     "service": "Service",
     "downloads": "Downloads",
     "energyStorageSystem": "Energiespeichersystem"
+  },
+  "footer": {
+    "company": "Unternehmen",
+    "about": "Über uns",
+    "contact": "Kontakt",
+    "news": "Neuigkeiten",
+    "cooperation": "Kooperation",
+    "residential": "ESS-Lösungen für Wohngebäude",
+    "commercial": "C&I ESS-Lösungen",
+    "afterSales": "After-Sales-Service",
+    "manual": "Handbuch-Download",
+    "privacy": "Datenschutzrichtlinie",
+    "terms": "Nutzungsvereinbarung",
+    "legal": "Copyright © Shenzhen Hithium Hero Energy Technology Co., Ltd."
   }
 }

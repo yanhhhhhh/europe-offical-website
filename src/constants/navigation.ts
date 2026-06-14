@@ -25,24 +25,6 @@ export function isLocale(value: string): value is Locale {
   return localeCodes.includes(value as Locale);
 }
 
-// 产品列表
-export const productSlugs = {
-  f8s: 'arkvolt-f8s',
-  l16s: 'arkvolt-l16s',
-  l16: 'arkvolt-l16',
-  r30: 'arkvolt-r30',
-} as const;
-
-// 路由配置
-export const routes = {
-  home: '/',
-  products: '/products',
-  about: '/about',
-  contact: '/contact',
-  service: '/service',
-  downloads: '/service/downloads',
-} as const;
-
 // 导航菜单配置（支持嵌套）
 export interface NavItem {
   key: string;
