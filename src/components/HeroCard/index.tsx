@@ -2,12 +2,9 @@
 
 import { MotionVariantName, motionVariants } from '@/constants/motionVariants';
 
-// import { baseConfigAtom } from '@/stores';
-// import { useAtomValue } from 'jotai';
 import { PropsWithChildren, useRef } from 'react';
 
 import { useMotionTextAnimation } from '@/hooks/useMotionTextAnimation';
-// import { getLanguageCode } from '@/utils/languageCode';
 
 import { motion, useInView } from 'motion/react';
 import { useLocale, useTranslations } from 'next-intl';
@@ -103,7 +100,7 @@ export const HeroCard = (props: HeroCardProps) => {
   );
   const cardClass = `hero-card  relative flex justify-center w-screen h-[1210px] lg:h-[800px]  ${cardClassName}`;
   const cardContentClass = `hero-card-content relative lg:pt-[46px] pt-[40px] flex flex-col items-center  text-center
-    ${languageCode == 'en' ? 'leading-[1.5]' : ''}
+   
   ${cardContentClassName}`;
 
   const titleClass = `hero-card-title lg:text-[46px]    font-bold  ${titleClassName}

@@ -7,7 +7,7 @@ import homeAboutUsImage from '@/assets/images/home/01-05.webp';
 import homeAboutUsMobileImage from '@/assets/images/home/01-05-m.webp';
 import homeCooperateImage from '@/assets/images/home/01-07.webp';
 import homeCooperateMobileImage from '@/assets/images/home/01-07-m.webp';
-import { arkvoltF8s, arkvoltL16, arkvoltL16s, arkvoltR30 } from './products';
+import { ArkvoltF8s, ArkvoltL16, ArkvoltL16s, ArkvoltR30 } from './products';
 
 export const homeBannerList = [f8sBanner, l16Banner];
 export const homeSolutions = {
@@ -28,7 +28,7 @@ export const homeSolutions = {
     },
   ],
 };
-export const homeProducts = [arkvoltL16s, arkvoltF8s, arkvoltL16, arkvoltR30];
+export const homeProducts = [ArkvoltL16s, ArkvoltF8s, ArkvoltL16, ArkvoltR30];
 export const homeAboutUs = {
   title: 'home.aboutUs.title',
   description: 'home.aboutUs.description',

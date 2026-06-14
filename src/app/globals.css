@@ -2,12 +2,12 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #202326;
+  --foreground: #000107;
   --color-primary: #1761ff;
   --muted: #6c737f;
   --line: #e6e9ed;
   --panel: #f5f6f7;
-  --dark: #050607;
+  --dark: #000107;
   --accent: #2878ff;
   --accent-2: #2fd178;
   --shadow: 0 22px 70px rgb(15 23 42 / 12%);
@@ -37,6 +37,7 @@
   --font-sans: Arial, Helvetica, ui-sans-serif, system-ui, sans-serif;
   --font-mono: 'SFMono-Regular', Consolas, 'Liberation Mono', monospace;
   --color-primary: var(--color-primary);
+  --color-dark: var(--dark);
   /* 字体颜色 */
 }
 

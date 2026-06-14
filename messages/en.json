@@ -66,10 +66,20 @@
     }
   },
   "products": {
+    "relatedProducts": "Related Products",
     "f8s": {
       "bannerTitle": "ARKVOLT F8S",
       "bannerDescription": "Home ESS / High - voltage 16kWh battery / 576V",
-      "model": "HSM-8K16HV-2M",
+      "advantageTitle": "Product Advantage",
+      "advantageDescription": "Hithium offers an integrated three-phase solar-storage solution, supporting 6~15 kW inverter + 8~256 kWh battery configurable capacity.",
+      "cycleLifeTitle": "Long Cycle Life LFP technology",
+      "cycleLifeDescription": "Long cycle life LFP battery with grid-proven cells, ≥8000 cycle lifespan and low heat generation for superior safety and durability.",
+      "flexibleCapacityTitle": "Flexible Capacity Expansion",
+      "flexibleCapacityDescription": "Our product features an 8kWh per pack modular design, allowing for each cluster (stack) to have a capacity ranging from 8 - 32kWh. Moreover, you can parallel multiple units up to a total capacity of 256kWh, providing you with highly flexible and scalable energy storage solutions to meet various power needs.",
+      "weatherConditionsTitle": "Built for All Weather Conditions",
+      "weatherConditionsDescription": "IP65 rated. Withstands 40cm water immersion, superior water resistance.",
+      "operatingTemperatureRangeTitle": "Operating Temperature Range：-20℃-55℃",
+      "operatingTemperatureRangeDescription": "Tests under specific conditions. Details subject to warranty and user manual.",
       "summary": "High-voltage three-phase solar-storage solution from 8kWh to 256kWh."
     },
     "l16s": {

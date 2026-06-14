@@ -1,7 +1,7 @@
 import type { Variants } from 'motion/react';
 export const defaultHeroEECommonSectionAnimation = {
   backgroundAnimation: 'blurIn',
-  backgroundAnimationOnce: false,
+  backgroundAnimationOnce: true,
   titleAnimation: 'fadeUp',
   titleAnimationOnce: false,
   descriptionAnimation: 'fadeUp',

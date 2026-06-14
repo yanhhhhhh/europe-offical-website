@@ -30,7 +30,7 @@ export type IProduct = {
     value: string;
   }[];
 };
-export const arkvoltF8s = {
+export const ArkvoltF8s = {
   productKey: 'arkvolt-f8s',
   name: 'ARKVOLT F8S',
   // diagram:'f8s-diagram.webp',
@@ -80,7 +80,7 @@ export const arkvoltF8s = {
     },
   ],
 };
-export const arkvoltL16 = {
+export const ArkvoltL16 = {
   productKey: 'arkvolt-l16',
   name: 'ARKVOLT L16',
   batteryCapacity: '16076.8Wh',
@@ -128,7 +128,7 @@ export const arkvoltL16 = {
     },
   ],
 };
-export const arkvoltL16s = {
+export const ArkvoltL16s = {
   productKey: 'arkvolt-l16s',
   name: 'ARKVOLT L16S',
   batteryCapacity: '16076.8Wh',
@@ -176,7 +176,7 @@ export const arkvoltL16s = {
     },
   ],
 };
-export const arkvoltR30 = {
+export const ArkvoltR30 = {
   productKey: 'arkvolt-r30',
   name: 'ARKVOLT R30',
   model: 'HPC-30LV-22U',
@@ -224,7 +224,7 @@ export const arkvoltR30 = {
     },
   ],
 };
-export const arkvoltAio30 = {
+export const ArkvoltAio30 = {
   productKey: 'arkvolt-aio30',
   name: 'ARKVOLT AIO30',
   model: 'HPC-30LV-44U',
@@ -273,9 +273,9 @@ export const arkvoltAio30 = {
   ],
 };
 export const products: IProduct[] = [
-  arkvoltF8s,
-  arkvoltL16,
-  arkvoltL16s,
-  arkvoltR30,
-  arkvoltAio30,
+  ArkvoltF8s,
+  ArkvoltL16,
+  ArkvoltL16s,
+  ArkvoltR30,
+  ArkvoltAio30,
 ];
