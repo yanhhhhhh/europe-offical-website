@@ -4,13 +4,14 @@ import {
   f8sProductAdvantage,
   f8sRelatedProducts,
   f8sFlexibleCapacity,
+  f8sWeatherConditions,
   f8sCycleLife,
 } from '@/constants/products/f8s';
 import { getTranslations } from 'next-intl/server';
 import HeroEECommonRelatedProducts from '@/components/HeroEECommonRelatedProducts';
-import {} from '@/constants/products/f8s';
+
 import { getRelatedProductsProps } from '../utils';
-import WeatherConditions from './WeatherConditions';
+
 import HeroEECommonSection from '@/components/HeroEECommonSection';
 import OperatingTemperatureRange from './OperatingTemperatureRange';
 import ProductParameters from './ProductParameters';
@@ -52,10 +53,15 @@ export default async function ArkvoltF8sPage() {
     title: t(f8sCycleLife.title),
     description: t(f8sCycleLife.description),
   };
-  const f8FlexibleCapacityProps = {
+  const f8sFlexibleCapacityProps = {
     ...f8sFlexibleCapacity,
     title: t(f8sFlexibleCapacity.title),
     description: t(f8sFlexibleCapacity.description),
+  };
+  const f8sWeatherConditionsProps = {
+    ...f8sWeatherConditions,
+    title: t(f8sWeatherConditions.title),
+    description: t(f8sWeatherConditions.description),
   };
   return (
     <div className="arkvolt-f8s-page">
@@ -68,10 +74,11 @@ export default async function ArkvoltF8sPage() {
       {/* Cycle Life */}
       <HeroEECommonSection {...f8sCycleLifeProps} />
       {/* FlexibleCapacity */}
-      <HeroEECommonSection {...f8FlexibleCapacityProps} />
+      <HeroEECommonSection {...f8sFlexibleCapacityProps} />
 
       {/* 天气适应性 */}
-      <WeatherConditions />
+
+      <HeroEECommonSection {...f8sWeatherConditionsProps} />
       {/* 工作温度范围 */}
       <OperatingTemperatureRange />
       {/* 相关产品 */}

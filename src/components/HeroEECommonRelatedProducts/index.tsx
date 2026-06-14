@@ -72,7 +72,7 @@ export default function HeroEECommonRelatedProducts(
                 transition: { duration: 0.3, ease: 'easeOut' },
               }}
             />
-            <div className="absolute bottom-[10px] left-1/2 -translate-x-1/2 text-white z-10 whitespace-nowrap">
+            <div className="absolute bottom-[28px] left-1/2 -translate-x-1/2 text-white z-10 whitespace-nowrap">
               <motion.h3
                 className="lg:!text-[24px] mb-[8px] text-[30px] font-bold"
                 variants={motionVariants.fadeUp}
