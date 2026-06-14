@@ -2,7 +2,7 @@ import { MediaLinks } from '@/constants/footer';
 
 export default function FooterMedia() {
   return (
-    <div className="flex gap-[20px]">
+    <div className="flex lg:gap-[20px] gap-[40px]">
       {MediaLinks.map((media) => (
         <a
           key={media.name}
