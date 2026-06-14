@@ -63,7 +63,7 @@ export const l16sOperatingTemperatureRange = {
   image: l16sOperatingTemperatureRangeImage,
   mobileImage: l16sMobileOperatingTemperatureRangeImage,
   contentClassName: 'lg:!pt-[50px] items-center text-center',
-  descriptionClassName: 'lg:pt-[548px] !text-[12px]  text-white/60',
+  descriptionClassName: 'lg:pt-[590px] pt-[950px] !text-[12px]  text-white/60',
   mobileImageClassName: '',
   imageClassName: '',
   ...defaultHeroEECommonSectionAnimation,

@@ -12,10 +12,10 @@ export default async function OperatingTemperatureRange() {
   return (
     <div className="relative">
       <HeroEECommonSection {...l16sOperatingTemperatureRangeProps} />
-      <div className="absolute left-[348px] bottom-[150px] text-[110px] text-white">
+      <div className="absolute lg:left-[348px] left-[60px] lg:bottom-[150px] bottom-[80px] lg:text-[110px] text-white text-[80px]">
         -20℃
       </div>
-      <div className="absolute right-[348px] bottom-[150px] text-[110px] text-white">
+      <div className="absolute lg:right-[348px] right-[60px] lg:bottom-[150px] bottom-[80px] lg:text-[110px] text-white text-[80px]">
         55℃
       </div>
     </div>
