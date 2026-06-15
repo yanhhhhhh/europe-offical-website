@@ -99,7 +99,7 @@ export default function HeroEECommonSection(props: HeroEECommonSectionProps) {
 
   const layoutClass = `hero-layout-section bg-dark p-[20px]  text-white h-[1210px] lg:h-[800px] ${layoutClassName}`;
   const titleClass = ` text-[48px] font-bold ${titleClassName}`;
-  const descriptionClass = `mt-[20px] text-[30px] mb-[36px] lg:text-[24px] lg:mt-[10px] ${descriptionClassName}`;
+  const descriptionClass = `mt-[20px] text-[30px] mb-[36px] lg:text-[24px] lg:mt-[10px] whitespace-pre-line ${descriptionClassName}`;
   const contentClass = `absolute left-0 top-0 pt-[60px] lg:pt-[100px] w-full  flex flex-col justify-center items-center z-10 ${contentClassName}`;
   const mobileImageClass = `hero-layout-mobile absolute w-full inset-0  ${mobileImageClassName}`;
   const imageClass = `hero-layout-pc absolute inset-0 w-full mx-auto ${imageClassName}`;

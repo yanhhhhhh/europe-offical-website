@@ -144,7 +144,7 @@ export function HeaderMobile() {
                               <div className="grid grid-cols-2 gap-2 w-full">
                                 {products.map((product) => (
                                   <Link
-                                    key={product.slug}
+                                    key={product.productKey}
                                     href={product.href}
                                     onClick={handleClose}
                                     className="block w-full"

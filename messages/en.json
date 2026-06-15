@@ -107,12 +107,21 @@
       "weatherConditionsDescription": "IP65 rated. Withstands 40cm water immersion, superior water resistance.",
       "operatingTemperatureRangeTitle": "Operating Temperature Range：-20℃-55℃",
       "operatingTemperatureRangeDescription": "Tests under specific conditions. Details subject to warranty and user manual.",
+      "maxOperatingTemperature": "Max. Operating Temperature",
+      "minOperatingTemperature": "Min. Operating Temperature",
+      "operatingTemperatureRangeTipFirst": "Built to Withstand Extreme Cold",
+      "operatingTemperatureRangeTipSecond": "Engineered for Extreme Heat",
+
       "model": "HPB-16LV",
       "summary": "Large-capacity low-voltage battery with compact footprint and inverter compatibility."
     },
     "r30": {
       "bannerTitle": "ARKVOLT R30/AIO30",
       "bannerDescription": "ARKVOLT AIO 30 is a Victron‑optimized indoor rack‑mounted all‑in‑one storage cabinet, engineered for plug‑and‑play, rapid deployment and scalable expansion.",
+      "cycleLifeTitle": "Long Cycle Life LFP technology",
+      "cycleLifeDescription": "587Ah cells, Max. Charge/Discharge Current 300A, ≥8000 cycles",
+      "flexibleCapacityTitle": "Flexible Capacity Expansion",
+      "flexibleCapacityDescription": "- 7.5kWh per pack modular design\n- 30kWh expandable cabinet\n- Parallel up to 960kWh",
       "model": "HPC-30LV-22U",
       "summary": "Victron-optimized indoor rack-mounted all-in-one cabinet for scalable expansion."
     }

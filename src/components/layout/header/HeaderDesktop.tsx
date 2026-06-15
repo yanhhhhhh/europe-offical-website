@@ -43,7 +43,7 @@ function ProductsDropdown({
         <div className="flex gap-2 justify-center">
           {products.map((product) => (
             <Link
-              key={product.slug}
+              key={product.productKey}
               href={product.href}
               onClick={onClose}
               className="w-[258px] h-[380px] group"

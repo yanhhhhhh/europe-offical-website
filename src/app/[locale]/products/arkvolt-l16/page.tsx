@@ -23,7 +23,7 @@ const l16BannerProps: HeroCardProps = {
     'lg:!pt-[140px]  lg:!px-[346px] lg:!items-start lg:!text-left  !pt-[105px]  ',
 };
 
-export default async function ArkvoltL16sPage() {
+export default async function ArkvoltL16Page() {
   const t = await getTranslations();
   const l16CycleLifeProps = {
     ...l16CycleLife,
@@ -40,11 +40,10 @@ export default async function ArkvoltL16sPage() {
     title: t(l16WeatherConditions.title),
     description: t(l16WeatherConditions.description),
   };
-  const l16RelatedProductsProps = await getRelatedProductsProps(
-    l16RelatedProducts
-  );
+  const l16RelatedProductsProps =
+    await getRelatedProductsProps(l16RelatedProducts);
   return (
-    <div className="arkvolt-l16s-page">
+    <div className="arkvolt-l16-page">
       <HeroCard {...l16BannerProps} />
       {/* Cycle Life */}
       <HeroEECommonSection {...l16CycleLifeProps} />
