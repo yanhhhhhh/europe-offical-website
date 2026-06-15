@@ -279,3 +279,6 @@ export const products: IProduct[] = [
   ArkvoltR30,
   ArkvoltAio30,
 ];
+
+// 产品参数数据
+export * from './productParameters';
