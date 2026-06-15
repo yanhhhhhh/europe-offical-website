@@ -99,6 +99,14 @@
     "l16": {
       "bannerTitle": "ARKVOLT L16",
       "bannerDescription": "Home ESS / Low-voltage 16kWh battery / 51.2V",
+      "cycleLifeTitle": "Long Cycle Life LFP technology",
+      "cycleLifeDescription": "Long cycle life LFP battery with grid-proven cells, ≥8000 cycle lifespan and low heat generation for superior safety and durability.",
+      "flexibleCapacityTitle": "Flexible Capacity Expansion",
+      "flexibleCapacityDescription": "16kWh usable energy ，Scalable up to 256kWh Compatible with main stream inverters",
+      "weatherConditionsTitle": "Built for All Weather Conditions",
+      "weatherConditionsDescription": "IP65 rated. Withstands 40cm water immersion, superior water resistance.",
+      "operatingTemperatureRangeTitle": "Operating Temperature Range：-20℃-55℃",
+      "operatingTemperatureRangeDescription": "Tests under specific conditions. Details subject to warranty and user manual.",
       "model": "HPB-16LV",
       "summary": "Large-capacity low-voltage battery with compact footprint and inverter compatibility."
     },

@@ -1,6 +1,5 @@
 import {
   l16sBanner,
-  // l16sProductAdvantage,
   l16sRelatedProducts,
   l16sFlexibleCapacity,
   l16sWeatherConditions,
@@ -41,8 +40,9 @@ export default async function ArkvoltL16sPage() {
     title: t(l16sWeatherConditions.title),
     description: t(l16sWeatherConditions.description),
   };
-  const l16sRelatedProductsProps =
-    await getRelatedProductsProps(l16sRelatedProducts);
+  const l16sRelatedProductsProps = await getRelatedProductsProps(
+    l16sRelatedProducts
+  );
   return (
     <div className="arkvolt-l16s-page">
       <HeroCard {...l16sBannerProps} />
@@ -51,7 +51,6 @@ export default async function ArkvoltL16sPage() {
       {/* FlexibleCapacity */}
       <HeroEECommonSection {...l16sFlexibleCapacityProps} />
 
-      {/* 天气适应性 */}
       {/* 天气适应性 */}
 
       <HeroEECommonSection {...l16sWeatherConditionsProps} />
