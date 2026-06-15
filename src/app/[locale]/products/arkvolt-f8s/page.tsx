@@ -23,6 +23,7 @@ const f8sBannerProps: HeroCardProps = {
   cardClassName: 'lg:!justify-start ',
   cardContentClassName:
     'lg:!pt-[140px]  lg:!px-[346px] lg:!items-start lg:!text-left  !pt-[105px]  ',
+  moreType: 'download',
 };
 
 const f8sProductAdvantageProps: HeroCardProps = {

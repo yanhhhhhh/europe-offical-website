@@ -18,8 +18,8 @@ export const l16Banner = {
   id: 'banner-L16',
   image: l16BannerImage, //图片地址
   mobileImage: l16MobileBannerImage, //移动端图片地址
-  download: 'service/download/l16', //手册下载
-  more: 'products/arkvolt-l16', //了解更多链接
+  download: '/service/downloads/arkvolt-l16', //手册下载
+  more: '/products/arkvolt-l16', //了解更多链接
 };
 export const l16CycleLife = {
   title: 'products.l16.cycleLifeTitle',

@@ -13,7 +13,7 @@ import Image, { StaticImageData } from 'next/image';
 
 import { Link } from '@/i18n/navigation';
 
-export type MoreType = 'learnMoreInfo' | 'contactUs' | 'learnMore';
+export type MoreType = 'learnMoreInfo' | 'contactUs' | 'learnMore' | 'download';
 
 export interface HeroCardProps extends PropsWithChildren {
   title?: string;
@@ -33,6 +33,7 @@ export interface HeroCardProps extends PropsWithChildren {
   //链接
   more?: string;
   moreType?: MoreType;
+  download?: string;
 
   descriptionInnerHtml?: boolean;
   motionVariant?: MotionVariantName | false;
@@ -71,6 +72,7 @@ export const HeroCard = (props: HeroCardProps) => {
 
     moreType = 'learnMoreInfo',
     more,
+    download,
     children,
 
     descriptionInnerHtml = false,
@@ -250,6 +252,23 @@ export const HeroCard = (props: HeroCardProps) => {
               className="no-underline cursor-pointer !text-white border  block mt-[36px] px-[110px] py-[18px] lg:px-[90px] lg:py-[12px] border-white rounded-[90px]"
             >
               {t('common.details')}
+            </Link>
+          </motion.div>
+        )}
+        {moreType === 'download' && download && (
+          <motion.div
+            className={moreClass}
+            variants={
+              textAnimationType !== false
+                ? motionVariants[textAnimationType]
+                : undefined
+            }
+          >
+            <Link
+              href={download}
+              className="no-underline cursor-pointer !text-white border  block mt-[36px] px-[110px] py-[18px] lg:px-[90px] lg:py-[12px] border-white rounded-[90px]"
+            >
+              {t('common.download')}
             </Link>
           </motion.div>
         )}

@@ -21,6 +21,7 @@ const l16sBannerProps: HeroCardProps = {
   cardClassName: 'lg:!justify-start ',
   cardContentClassName:
     'lg:!pt-[140px]  lg:!px-[346px] lg:!items-start lg:!text-left  !pt-[105px]  ',
+  moreType: 'download',
 };
 
 export default async function ArkvoltL16sPage() {
@@ -40,9 +41,8 @@ export default async function ArkvoltL16sPage() {
     title: t(l16sWeatherConditions.title),
     description: t(l16sWeatherConditions.description),
   };
-  const l16sRelatedProductsProps = await getRelatedProductsProps(
-    l16sRelatedProducts
-  );
+  const l16sRelatedProductsProps =
+    await getRelatedProductsProps(l16sRelatedProducts);
   return (
     <div className="arkvolt-l16s-page">
       <HeroCard {...l16sBannerProps} />

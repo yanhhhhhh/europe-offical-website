@@ -19,6 +19,7 @@ const r30BannerProps: HeroCardProps = {
   cardContentClassName:
     'lg:!pt-[140px]  lg:!px-[346px] !items-start !text-left  !pt-[105px]  ',
   descriptionClassName: 'text-left lg:w-[630px]',
+  moreType: 'download',
 };
 
 export default async function Arkvoltr30Page() {

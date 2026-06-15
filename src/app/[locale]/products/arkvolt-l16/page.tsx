@@ -21,6 +21,7 @@ const l16BannerProps: HeroCardProps = {
   cardClassName: 'lg:!justify-start ',
   cardContentClassName:
     'lg:!pt-[140px]  lg:!px-[346px] lg:!items-start lg:!text-left  !pt-[105px]  ',
+  moreType: 'download',
 };
 
 export default async function ArkvoltL16Page() {

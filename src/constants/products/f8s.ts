@@ -22,8 +22,8 @@ export const f8sBanner = {
   id: 'banner-F8S',
   image: fsBannerImage,
   mobileImage: fsMobileBannerImage,
-  download: 'service/download/f8s', //手册下载
-  more: 'products/arkvolt-f8s', //了解更多链接
+  download: '/service/downloads/arkvolt-f8s', //手册下载
+  more: '/products/arkvolt-f8s', //了解更多链接
 };
 export const f8sProductAdvantage = {
   title: 'products.f8s.advantageTitle',

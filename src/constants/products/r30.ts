@@ -14,8 +14,8 @@ export const r30Banner = {
   id: 'banner-r30',
   image: r30BannerImage, //图片地址
   mobileImage: r30MobileBannerImage, //移动端图片地址
-  download: 'service/download/r30', //手册下载
-  more: 'products/arkvolt-r30', //了解更多链接
+  download: '/service/downloads/arkvolt-r30', //手册下载
+  more: '/products/arkvolt-r30', //了解更多链接
 };
 export const r30CycleLife = {
   title: 'products.r30.cycleLifeTitle',
