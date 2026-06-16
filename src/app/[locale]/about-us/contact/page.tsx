@@ -6,7 +6,8 @@ const bannerProps = {
   ...contactUsBanner,
   backgroundImage: contactUsBanner.image,
   mobileBackgroundImage: contactUsBanner.mobileImage,
-  cardClassName: 'justify-start ',
+  cardClassName: 'justify-start lg:!h-[600px]',
+
   cardContentClassName:
     'lg:!pt-[140px]  lg:!px-[346px] !items-start !text-left  !pt-[105px] pl-[44px]',
   descriptionClassName: 'lg:w-[604px] text-left w-[458px]',

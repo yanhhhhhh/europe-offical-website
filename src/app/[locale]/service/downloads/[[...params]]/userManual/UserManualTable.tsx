@@ -71,7 +71,7 @@ const UserManualTable: React.FC<UserManualTableProps> = ({
     <div className="w-full overflow-x-auto">
       <table className="w-full border-collapse  rounded-[8px] overflow-hidden shadow-lg">
         <thead>
-          <tr className="bg-primary text-white">
+          <tr className="bg-[#050714] text-white">
             <th
               className={`${renderProductTableThClassName} !text-left  lg:!pl-[32px] pl-[32px]`}
             >
@@ -120,7 +120,7 @@ const UserManualTable: React.FC<UserManualTableProps> = ({
                 }}
               >
                 <td className="text-nowrap p-[12px] lg:p-[12px] text-center text-[36px] lg:text-[18px] text-gray-600 border-b border-gray-100 align-middle">
-                  <div className="flex text-primary font-semibold items-center  cursor-pointer  lg:py-[8px] lg:px-[16px] p-[16px]">
+                  <div className="flex text-primary  items-center  cursor-pointer  lg:py-[8px] lg:px-[16px] p-[16px]">
                     {product.name}
                     <IconZhankai
                       className={`w-[30px] h-[30px] lg:w-[16px] lg:h-[16px] transition-transform duration-300 ml-[8px] text-primary ${

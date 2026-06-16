@@ -16,13 +16,13 @@ export const offices = [
   },
   {
     country: 'Netherland',
-    name: 'Hithium Energy Storage Technology Netherlands B.V.',
-    address: 'Gustav Mahlerlaan 2970, 1081 LA Amsterdam, The Netherlands',
+    name: 'Hithium NL B.V.',
+    address: 'Weena 505, 3013 AL, Rotterdam, the Netherlands',
     email: 'ress@hithium.com',
   },
   {
     country: 'China',
-    name: 'Hithium Energy Storage Technology (Shanghai) Co., Ltd.',
+    name: 'Shenzhen Hithium Hero Energy Equity Technology Co., Ltd',
     address:
       'Room 1101, No. 500 Yunjin Road, Minhang District, Shanghai, China',
     email: 'ress@hithium.com',

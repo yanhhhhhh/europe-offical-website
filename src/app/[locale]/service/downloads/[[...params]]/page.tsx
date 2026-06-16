@@ -11,6 +11,7 @@ const Download = () => {
   const downloadManualBannerProps: HeroServerCardProps = {
     ...downloadsBanner,
     backgroundImage: downloadsBanner.image.src,
+    cardClassName: 'lg:!h-[600px]',
     backgroundMobileImage: downloadsBanner.mobileImage.src,
     contentClassName: 'lg:!mt-[96px] !mt-[105px]   w-full',
     titleClassName: 'mb-[20px]',

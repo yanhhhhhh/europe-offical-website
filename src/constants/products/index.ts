@@ -63,7 +63,7 @@ export const ArkvoltF8s = {
     },
     {
       key: 'cycleLife',
-      value: '8000 cycles, @25°C, @0.5C, @90%DOD, @70%EOL',
+      value: '≥8000 cycles, @25°C, @0.5C, @90%DOD, @70%EOL',
     },
     {
       key: 'rating',
@@ -103,15 +103,15 @@ export const ArkvoltL16 = {
   productFeatures: [
     {
       key: 'operationVoltageRange',
-      value: '481.6~657.0[VDC]',
+      value: '44.8~57.6[VDC]',
     },
     {
       key: 'maximumChargeDischargeCurrent',
-      value: '12.5A/12.5A',
+      value: '157A / 157A',
     },
     {
       key: 'cycleLife',
-      value: '8000 cycles, @25°C, @0.5C, @90%DOD, @70%EOL',
+      value: '≥8000 cycles, @25°C, @0.5C, @90%DOD, @70%EOL',
     },
     {
       key: 'rating',
@@ -120,11 +120,11 @@ export const ArkvoltL16 = {
 
     {
       key: 'certifications',
-      value: 'CE, IEC62619, IEC62040, UN38.3, MSDS, ROHS, REACH',
+      value: 'CE, IEC62619, IEC62040, UN38.3, MSDS, RoHS, REACH',
     },
     {
       key: 'dimensions',
-      value: 'L597*W263*H1124mm',
+      value: 'L468.2*W265*H900mm',
     },
   ],
 };
@@ -151,15 +151,15 @@ export const ArkvoltL16s = {
   productFeatures: [
     {
       key: 'operationVoltageRange',
-      value: '481.6~657.0[VDC]',
+      value: '44.8~57.6[VDC]',
     },
     {
       key: 'maximumChargeDischargeCurrent',
-      value: '12.5A/12.5A',
+      value: '157A / 157A',
     },
     {
       key: 'cycleLife',
-      value: '8000 cycles, @25°C, @0.5C, @90%DOD, @70%EOL',
+      value: '≥8000 cycles, @25°C, @0.5C, @90%DOD, @70%EOL',
     },
     {
       key: 'rating',
@@ -172,7 +172,7 @@ export const ArkvoltL16s = {
     },
     {
       key: 'dimensions',
-      value: 'L597*W263*H1124mm',
+      value: 'L481.2*W261*H1025mm',
     },
   ],
 };
@@ -186,7 +186,7 @@ export const ArkvoltR30 = {
   ratedVoltage: '51.2[VDC]',
   netWeight: '350kg',
   voltage: '44.8~58.4V',
-  current: '300A max',
+  current: '300A / 300A',
 
   image: r30ProductImage,
   albumUrl:
@@ -199,19 +199,19 @@ export const ArkvoltR30 = {
   productFeatures: [
     {
       key: 'operationVoltageRange',
-      value: '481.6~657.0[VDC]',
+      value: '44.8~58.4[VDC]',
     },
     {
       key: 'maximumChargeDischargeCurrent',
-      value: '12.5A/12.5A',
+      value: '300A / 300A',
     },
     {
       key: 'cycleLife',
-      value: '8000 cycles, @25°C, @0.5C, @90%DOD, @70%EOL',
+      value: '≥8000 cycles, @25°C, @0.5C, @90%DOD, @70%EOL',
     },
     {
       key: 'rating',
-      value: 'IP65',
+      value: 'IP20',
     },
 
     {
@@ -220,7 +220,7 @@ export const ArkvoltR30 = {
     },
     {
       key: 'dimensions',
-      value: 'L597*W263*H1124mm',
+      value: 'L600*W630*H1000mm',
     },
   ],
 };
@@ -247,19 +247,19 @@ export const ArkvoltAio30 = {
   productFeatures: [
     {
       key: 'operationVoltageRange',
-      value: '481.6~657.0[VDC]',
+      value: '44.8~58.4[VDC]',
     },
     {
       key: 'maximumChargeDischargeCurrent',
-      value: '12.5A/12.5A',
+      value: '300A / 300A',
     },
     {
       key: 'cycleLife',
-      value: '8000 cycles, @25°C, @0.5C, @90%DOD, @70%EOL',
+      value: '≥8000 cycles, @25°C, @0.5C, @90%DOD, @70%EOL',
     },
     {
       key: 'rating',
-      value: 'IP65',
+      value: 'IP20',
     },
 
     {
@@ -268,7 +268,7 @@ export const ArkvoltAio30 = {
     },
     {
       key: 'dimensions',
-      value: 'L597*W263*H1124mm',
+      value: 'L600*W630*H1900mm',
     },
   ],
 };
