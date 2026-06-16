@@ -13,7 +13,7 @@ const bannerListProps: HeroCardProps[] = homeBannerList.map((item) => {
       'lg:!pt-[140px]  lg:!px-[346px] lg:!items-start lg:!text-left  !pt-[105px]  ',
     // 仅首张为 LCP 优先
     isPriority: true,
-    descriptionClassName: 'lg:text-left lg:w-[540px]',
+    descriptionClassName: 'lg:text-left lg:w-[550px]',
     fetchPriority: 'high',
     imageSizes: '(max-width: 1024px) 100vw, 100vw',
   };
