@@ -67,6 +67,8 @@
   },
   "products": {
     "relatedProducts": "Related Products",
+    "productParameters": "Product Parameters",
+    "productOverview": "Product Overview",
     "f8s": {
       "bannerTitle": "ARKVOLT F8S",
       "bannerDescription": "Home ESS / High - voltage 16kWh battery / 576V",

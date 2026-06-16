@@ -14,7 +14,7 @@ import { getRelatedProductsProps } from '../utils';
 
 import HeroEECommonSection from '@/components/HeroEECommonSection';
 import OperatingTemperatureRange from './OperatingTemperatureRange';
-import ProductParameters from './ProductParameters';
+import ProductParameters from './Parameters';
 import ProductFeatures from './Features';
 const f8sBannerProps: HeroCardProps = {
   ...f8sBanner,
