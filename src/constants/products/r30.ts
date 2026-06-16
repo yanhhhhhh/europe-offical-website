@@ -26,7 +26,7 @@ export const r30CycleLife = {
   mobileImageClassName: 'w-full !h-[654px] top-auto bottom-0 mx-auto ',
   imageClassName: '',
   contentClassName:
-    'lg:top-[223px] lg:left-[346px] lg:!justify-start lg:text-left lg:!items-start lg:!w-[500px] top-[69px] px-[98px] lg:px-0 items-center text-center',
+    'lg:top-[223px] lg:left-[346px] lg:!justify-start lg:text-left lg:!items-start lg:!w-[500px] top-[69px] px-[44px] lg:px-0 items-center text-center',
   ...defaultHeroEECommonSectionAnimation,
 };
 

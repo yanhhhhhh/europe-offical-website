@@ -13,7 +13,7 @@ import { HeroCardProps, HeroCard } from '@/components/HeroCard';
 import HeroEECommonSection from '@/components/HeroEECommonSection';
 
 import OperatingTemperatureRange from './OperatingTemperatureRange';
-
+import ProductParameters from './Parameters';
 const l16BannerProps: HeroCardProps = {
   ...l16Banner,
   backgroundImage: l16Banner.image,
@@ -46,6 +46,8 @@ export default async function ArkvoltL16Page() {
   return (
     <div className="arkvolt-l16-page">
       <HeroCard {...l16BannerProps} />
+      {/* 产品参数 */}
+      <ProductParameters />
       {/* Cycle Life */}
       <HeroEECommonSection {...l16CycleLifeProps} />
       {/* FlexibleCapacity */}

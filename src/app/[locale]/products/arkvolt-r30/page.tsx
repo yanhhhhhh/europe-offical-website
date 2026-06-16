@@ -10,7 +10,7 @@ import HeroEECommonRelatedProducts from '@/components/HeroEECommonRelatedProduct
 import { getRelatedProductsProps } from '../utils';
 import { HeroCardProps, HeroCard } from '@/components/HeroCard';
 import HeroEECommonSection from '@/components/HeroEECommonSection';
-
+import ProductParameters from './Parameters';
 const r30BannerProps: HeroCardProps = {
   ...r30Banner,
   backgroundImage: r30Banner.image,
@@ -40,6 +40,8 @@ export default async function Arkvoltr30Page() {
   return (
     <div className="arkvolt-r30-page">
       <HeroCard {...r30BannerProps} />
+      {/* 产品参数 */}
+      <ProductParameters />
       {/* Cycle Life */}
       <HeroEECommonSection {...r30CycleLifeProps} />
       {/* FlexibleCapacity */}

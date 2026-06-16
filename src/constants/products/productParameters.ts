@@ -3,6 +3,12 @@ import f8sParameter02Image from '@/assets/images/products/f8s/02-04-2堆.webp';
 import f8sParameter03Image from '@/assets/images/products/f8s/02-04-3堆.webp';
 import f8sParameter04Image from '@/assets/images/products/f8s/02-04-4堆.webp';
 
+import f16sParameterImage from '@/assets/images/products/l16s/pc/03-03.webp';
+
+import f16ParameterImage from '@/assets/images/products/l16/pc/03-03.webp';
+
+import r30Parameter01 from '@/assets/images/products/r30/pc/05-02-22U.webp';
+import r30Parameter02 from '@/assets/images/products/r30/pc/05-02-44U.webp';
 import { StaticImageData } from 'next/image';
 
 // 产品参数数据类型定义
@@ -68,6 +74,61 @@ export const f8sParameters: ProductParameter[] = [
       maxCurrent: '12.5A/12.5A',
       netWeight: '332kg',
       dimensions: 'L597*W263*H2018mm',
+    },
+  },
+];
+
+export const l16sParameters: ProductParameter[] = [
+  {
+    model: 'HPB-16LV-S',
+    image: f16sParameterImage, // 需要替换为实际图片
+    specifications: {
+      batteryEnergy: '16076.8Wh',
+      ratedVoltage: '51.2[VDC]',
+      voltageRange: '44.8~57.6[VDC]',
+      maxCurrent: '157A/157A',
+      netWeight: '137.5kg',
+      dimensions: 'L481.2*W261*H1025mm',
+    },
+  },
+];
+export const l16Parameters: ProductParameter[] = [
+  {
+    model: 'HPB-16LV',
+    image: f16ParameterImage, // 需要替换为实际图片
+    specifications: {
+      batteryEnergy: '16076.8Wh',
+      ratedVoltage: '51.2[VDC]',
+      voltageRange: '44.8~57.6[VDC]',
+      maxCurrent: '157A/157A',
+      netWeight: '123kg',
+      dimensions: 'L468.2*W265*H900mm',
+    },
+  },
+];
+export const r30Parameters: ProductParameter[] = [
+  {
+    model: 'HPC-30LV-22U',
+    image: r30Parameter01, // 需要替换为实际图片
+    specifications: {
+      batteryEnergy: '30054.4Wh',
+      ratedVoltage: '51.2[VDC]',
+      voltageRange: '44.8~58.4[VDC]',
+      maxCurrent: '300A/300A',
+      netWeight: '350kg',
+      dimensions: 'L600*W630*H1000mm',
+    },
+  },
+  {
+    model: 'HPC-30LV-44U',
+    image: r30Parameter02, // 需要替换为实际图片
+    specifications: {
+      batteryEnergy: '30054.4Wh',
+      ratedVoltage: '51.2[VDC]',
+      voltageRange: '44.8~58.4[VDC]',
+      maxCurrent: '300A/300A',
+      netWeight: '600kg',
+      dimensions: 'L600*W630*H1900mm',
     },
   },
 ];

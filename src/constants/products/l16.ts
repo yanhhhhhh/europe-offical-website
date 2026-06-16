@@ -30,7 +30,7 @@ export const l16CycleLife = {
   mobileImageClassName: 'w-full !h-[654px] top-auto bottom-0 mx-auto ',
   imageClassName: '!w-[734px] !h-[654px] top-[80px] !left-[298px] !mx-0',
   contentClassName:
-    'lg:top-[223px] left-auto lg:right-[350px] lg:!justify-start lg:text-left lg:!items-start lg:!w-[500px] top-[69px] px-[98px] lg:px-0 items-center text-center',
+    'lg:top-[223px] lg:left-auto lg:right-[350px] lg:!justify-start lg:text-left lg:!items-start lg:!w-[500px] top-[69px] lg:px-0 items-center text-center px-[44px]',
   ...defaultHeroEECommonSectionAnimation,
 };
 
@@ -64,7 +64,7 @@ export const l16OperatingTemperatureRange = {
   mobileImage: l16MobileOperatingTemperatureRangeImage,
   contentClassName: 'lg:!pt-[50px] items-center text-center',
   descriptionClassName:
-    'lg:pt-[690px] pt-[910px] text-white/60 text-[12px] leading-[1.2]',
+    'lg:pt-[600px] pt-[910px] text-white/60 !text-[12px] leading-[1.2]',
   mobileImageClassName: '',
   imageClassName: '',
   ...defaultHeroEECommonSectionAnimation,

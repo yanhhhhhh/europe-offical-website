@@ -16,6 +16,20 @@ import f8sMobileOperatingTemperatureRangeImage from '@/assets/images/products/f8
 import { ArkvoltL16s, ArkvoltL16, ArkvoltR30 } from './index';
 import { defaultHeroEECommonSectionAnimation } from '../motionVariants';
 
+import featureImage01 from '@/assets/images/products/f8s/02-03-01.webp';
+import featureMobileImage01 from '@/assets/images/products/f8s/02-03-01-m.webp';
+import featureImage02 from '@/assets/images/products/f8s/02-03-02.webp';
+import featureMobileImage02 from '@/assets/images/products/f8s/02-03-02-m.webp';
+import featureImage03 from '@/assets/images/products/f8s/02-03-03.webp';
+import featureMobileImage03 from '@/assets/images/products/f8s/02-03-03-m.webp';
+import featureImage04 from '@/assets/images/products/f8s/02-03-04.webp';
+import featureMobileImage04 from '@/assets/images/products/f8s/02-03-04-m.webp';
+import featureImage05 from '@/assets/images/products/f8s/02-03-05.webp';
+
+import featureImage06 from '@/assets/images/products/f8s/02-03-06.webp';
+import featureMobileImage06 from '@/assets/images/products/f8s/02-03-06-m.webp';
+import { StaticImageData } from 'next/image';
+
 export const f8sBanner = {
   title: 'products.f8s.bannerTitle',
   description: 'products.f8s.bannerDescription',
@@ -31,7 +45,56 @@ export const f8sProductAdvantage = {
   image: f8sProductAdvantageImage,
   mobileImage: f8sMobileProductAdvantageImage,
 };
-export const f8sFeatures = [];
+export const f8sFeatures: {
+  title: string;
+  image: StaticImageData;
+  mobileImage?: StaticImageData;
+  imageClassName: string;
+  mobileImageClassName: string;
+}[] = [
+  {
+    title: 'products.f8s.featureTitle01',
+    image: featureImage01,
+    mobileImage: featureMobileImage01,
+    imageClassName: '',
+    mobileImageClassName: '',
+  },
+  {
+    title: 'products.f8s.featureTitle02',
+    image: featureImage02,
+    mobileImage: featureMobileImage02,
+    imageClassName: '',
+    mobileImageClassName: '',
+  },
+  {
+    title: 'products.f8s.featureTitle03',
+    image: featureImage03,
+    mobileImage: featureMobileImage03,
+    imageClassName: '',
+    mobileImageClassName: '',
+  },
+  {
+    title: 'products.f8s.featureTitle04',
+    image: featureImage04,
+    mobileImage: featureMobileImage04,
+    imageClassName: '',
+    mobileImageClassName: '',
+  },
+  {
+    title: 'products.f8s.featureTitle05',
+    image: featureImage05,
+    // mobileImage:'',
+    imageClassName: '',
+    mobileImageClassName: '',
+  },
+  {
+    title: 'products.f8s.featureTitle06',
+    image: featureImage06,
+    mobileImage: featureMobileImage06,
+    imageClassName: '',
+    mobileImageClassName: '',
+  },
+];
 
 export const f8sCycleLife = {
   title: 'products.f8s.cycleLifeTitle',
@@ -42,7 +105,7 @@ export const f8sCycleLife = {
   mobileImageClassName: 'w-full !h-[654px] top-auto bottom-0 mx-auto ',
   imageClassName: '!w-[734px] !h-[654px] top-[80px] !left-[298px] !mx-0',
   contentClassName:
-    'lg:top-[223px] left-auto lg:right-[350px] lg:!justify-start lg:text-left lg:!items-start lg:!w-[500px] top-[69px] px-[98px] lg:px-0 items-center text-center',
+    'lg:top-[223px] left-auto lg:right-[350px] lg:!justify-start lg:text-left lg:!items-start lg:!w-[500px] top-[69px] px-[44px] lg:px-0 items-center text-center',
   ...defaultHeroEECommonSectionAnimation,
 };
 
